@@ -1,0 +1,226 @@
+/*-- scss:defaults --*/
+
+// Warm earth-tone palette inspired by wildlife/forest imagery
+$sage:       #7a8f6b;
+$moss:       #4a5d3a;
+$sand:       #e9e2d3;
+$clay:       #b8654a;
+$cream:      #faf7f1;
+$ink:        #2d2a26;
+$ink-soft:   #5a534a;
+$rule:       #d8cfbd;
+
+// Bootstrap variable overrides
+$primary:         $sage !default;
+$secondary:       $clay !default;
+$body-bg:         $cream !default;
+$body-color:      $ink !default;
+$link-color:      $moss !default;
+$link-hover-color: $clay !default;
+
+// Typography — Aptos (with graceful fallbacks), slightly larger body
+$aptos-stack:       "Aptos", "Aptos Display", "Segoe UI", "Helvetica Neue", "Arial", sans-serif !default;
+$aptos-serif-stack: "Aptos Serif", "Source Serif Pro", "Georgia", "Times New Roman", serif !default;
+
+$font-family-sans-serif: $aptos-stack !default;
+$font-family-serif:      $aptos-serif-stack !default;
+$font-family-base:       $aptos-stack !default;
+$headings-font-family:   $aptos-stack !default;
+
+$font-size-base:         1.125rem !default;   // was 1rem — bumps body text
+$h1-font-size:           2.35rem !default;
+$h2-font-size:           1.65rem !default;
+$h3-font-size:           1.30rem !default;
+$h4-font-size:           1.15rem !default;
+$headings-font-weight:   600 !default;
+$headings-color:         $moss !default;
+
+// Navbar — slimmer band (reduced height, not width)
+$navbar-padding-y:       0.35rem !default;
+$nav-link-padding-y:     0.35rem !default;
+$navbar-brand-padding-y: 0.25rem !default;
+$navbar-brand-font-size: 1rem !default;
+
+$navbar-bg:  $cream !default;
+$navbar-fg:  $ink !default;
+$navbar-hl:  $clay !default;
+
+$footer-bg:  $sand !default;
+$footer-fg:  $ink-soft !default;
+
+$code-bg:    #f3efe6 !default;
+$code-color: $moss !default;
+
+/*-- scss:rules --*/
+
+// Aptos is a Microsoft system font that ships with Office and Windows 11;
+// for visitors who don't have it locally we fall back to a Google-hosted
+// visually similar grotesk. Patrick Hand is used inside the mastitis
+// and western-Thailand schematic SVGs on the research page.
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Patrick+Hand&display=swap');
+
+body {
+  font-family: $aptos-stack;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Use Inter as the final fallback when Aptos isn't installed
+@supports not (font-family: "Aptos") {
+  body { font-family: "Aptos", "Inter", sans-serif; }
+}
+
+// SLIMMER NAVBAR (reduced height, full width preserved)
+.navbar {
+  min-height: 2.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid $rule;
+  box-shadow: none;
+
+  .navbar-brand {
+    display: none;                 // hide any brand text / site title
+  }
+  .nav-link {
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-size: 0.95rem;
+  }
+  .nav-link:hover,
+  .nav-link.active {
+    color: $clay !important;
+  }
+  // Toggler (the three-line hamburger on small screens) — keep quiet
+  .navbar-toggler {
+    border-color: transparent;
+  }
+}
+
+// Hero / about layouts on landing page (trestles + jolla)
+.quarto-about-trestles .about-entity .about-image,
+.quarto-about-jolla    .about-entity .about-image {
+  border: 4px solid $sand;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+.quarto-about-trestles .about-entity .about-link,
+.quarto-about-jolla    .about-entity .about-link {
+  border-color: $rule;
+  color: $ink-soft;
+  background: transparent;
+}
+.quarto-about-trestles .about-entity .about-link:hover,
+.quarto-about-jolla    .about-entity .about-link:hover {
+  background: $sage;
+  color: $cream;
+  border-color: $sage;
+}
+
+// Headings — warm, slight rhythm
+h1, h2, h3, h4, h5, h6 {
+  color: $moss;
+  letter-spacing: -0.005em;
+}
+h2 {
+  border-bottom: 2px solid $sand;
+  padding-bottom: 0.35rem;
+  margin-top: 2.4rem;
+}
+
+// Links — gentle underline in body copy
+a { text-decoration: none; }
+main a:not(.btn):not(.nav-link):not(.quarto-title-block a) {
+  border-bottom: 1px dotted rgba(122,143,107,0.5);
+}
+main a:not(.btn):hover {
+  border-bottom-color: $clay;
+  color: $clay;
+}
+
+// Callouts
+.callout { border-radius: 6px; border-left-width: 4px; }
+.callout.callout-style-default { background: lighten($sand, 4%); }
+
+// Blog listing — cards, soft borders
+.quarto-listing .listing-default .quarto-post,
+.quarto-listing .listing-grid .quarto-post {
+  border-bottom: 1px solid $rule;
+  padding: 1.25rem 0;
+}
+.quarto-listing .listing-default .thumbnail img { border-radius: 4px; }
+.listing-categories .listing-category {
+  background: $sand;
+  color: $moss;
+  border: 1px solid $rule;
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  font-size: 0.8rem;
+}
+.listing-categories .listing-category:hover { background: $sage; color: $cream; }
+
+// FOOTER — where the social icons now live
+.nav-footer {
+  background: $sand;
+  border-top: 1px solid $rule;
+  color: $ink-soft;
+  font-size: 0.95rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.nav-footer a {
+  color: $moss;
+  margin: 0 0.35rem;
+  font-size: 1.25rem;           // slightly larger icon clickable area
+  display: inline-block;
+}
+.nav-footer a:hover { color: $clay; }
+.nav-footer .nav-footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+// TOC
+#TOC, .sidebar nav[role=doc-toc] { font-size: 0.95rem; }
+#TOC a, .sidebar nav[role=doc-toc] a {
+  color: $ink-soft;
+  border-left-color: $rule;
+}
+#TOC a.active, .sidebar nav[role=doc-toc] a.active {
+  color: $clay;
+  border-left-color: $clay;
+  font-weight: 600;
+}
+
+// Buttons
+.btn-outline-primary {
+  color: $moss;
+  border-color: $sage;
+}
+.btn-outline-primary:hover {
+  background: $sage;
+  border-color: $sage;
+  color: $cream;
+}
+
+// Tables — quiet
+table {
+  border-top: 2px solid $ink;
+  border-bottom: 2px solid $ink;
+}
+thead tr th { border-bottom: 1px solid $ink; }
+
+// Figures inside prose — a bit of breathing room
+main figure {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+main figure figcaption {
+  font-size: 0.92rem;
+  color: $ink-soft;
+  text-align: left;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}

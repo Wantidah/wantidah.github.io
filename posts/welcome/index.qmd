@@ -1,0 +1,133 @@
+---
+title: "Pangolins, pathogens, and the price of land-use change"
+description: "Why Southeast Asia's wildlife trade and shifting landscapes keep putting people, livestock, and wild animals on the same map — and what One Health thinking might do about it."
+author: "Wantida"
+date: "2026-04-19"
+categories: [one-health, wildlife-trade, emerging-diseases]
+image: thumbnail.jpg
+draft: false
+---
+
+Welcome — thanks for stopping by. I wanted the first post here to be
+about something I keep thinking about as a vet, a wildlife disease
+ecologist, and someone who grew up in Southeast Asia: the places
+where people, wild animals, and pathogens are pushed closer
+together, and how often that push is something we do to ourselves.
+
+## The pangolin on the cover
+
+The most-trafficked wild mammal on Earth is almost certainly a
+pangolin. All eight species — four in Africa, four in Asia, including
+the **Sunda pangolin** (*Manis javanica*) across the region I come
+from — are listed on CITES Appendix I, and all eight are in some
+shade of red on the IUCN list. Their scales, made of the same keratin
+as my fingernails, are smuggled by the tonne into traditional-medicine
+markets. Their meat is a luxury dish. Estimates from seizure data
+suggest **more than a million pangolins** have been pulled out of the
+wild over the last two decades, and every estimate people bother to
+make turns out to be an undercount.
+
+That number matters beyond the animals themselves. Pangolins became
+household names in 2020 when their role in the early SARS-CoV-2
+investigation put them briefly on every front page. I don't think
+pangolins caused that pandemic. But the episode made something
+visible that wildlife veterinarians had been quietly writing about
+for years: **illegally traded wildlife is a moving buffet of
+pathogens**, carried through live-animal markets, back-road holding
+pens, airport baggage, and courier networks that no diagnostic lab
+has standing access to.
+
+## Tracking wildlife in Southeast Asia
+
+Part of why this is so hard to manage is that we have a very uneven
+picture of what's moving around. My own work has been on the
+*resident* side of that picture — GPS collars on gaur and banteng,
+habitat-suitability models across thirteen Asian countries, stochastic
+disease models that ask *what happens if a cattle-borne pathogen
+actually meets a wild bovid population*.
+
+A couple of things you learn quickly from that kind of tracking work:
+
+- Wild bovid habitat in Southeast Asia is **fragmented and squeezed
+  up against the working landscape**. Over half of the habitat that
+  is still ecologically suitable for gaur, banteng, and wild water
+  buffalo sits outside protected areas. That isn't a failure of
+  conservation; it's a description of a continent where national
+  parks are islands in a sea of agriculture, plantation, and human
+  settlement.
+- Where wild bovid habitat and domestic cattle density overlap, you
+  get **interface zones** — forest edges, cropland borders, shared
+  water points — that are exactly the kinds of places where
+  pathogens like foot-and-mouth disease, haemorrhagic septicaemia,
+  or brucellosis can move in either direction.
+- Illegal hunting, snaring, and wildlife trafficking cut right
+  through these same zones. So the same corridors that matter for
+  conservation are also the corridors that matter for pathogen
+  movement and for the wildlife trade.
+
+It is, in other words, one landscape with several problems stacked on
+top of each other.
+
+## Land-use change is a disease driver
+
+Most of the big emerging infectious disease events of the last fifty
+years — **Nipah, SARS, MERS, Ebola, highly pathogenic avian
+influenza, monkeypox/mpox, SARS-CoV-2** — share a pattern. A
+pathogen that was quietly circulating in a wild host encountered
+humans (or human-adjacent animals like pigs, poultry, civets, or
+camels) because the edge between *wild* and *not-wild* shifted. A
+forest was cleared, a plantation was expanded, a cave was mined, a
+live-animal market scaled up, a trade route opened.
+
+The published evidence on this has become hard to argue with.
+Ecological studies show that **deforestation and landscape
+fragmentation correlate with increases in zoonotic disease spillover
+events**, because they change which animals live where, which
+pathogens they carry, and how often any of that touches a human
+community. The wildlife trade amplifies the effect — it takes that
+edge and moves it, physically, into airports and cities.
+
+The implication for my field is uncomfortable and, I think, freeing:
+surveillance designed around known pathogens and known hosts will
+always be chasing the last outbreak. Surveillance designed around the
+**interfaces** — forest edges being cleared, markets that handle wild
+species, transport chains that aggregate animals — has a chance of
+catching the next one.
+
+## One Health, honestly
+
+"One Health" gets used so often in grant applications that it can
+start to sound like a polite slogan. I want to try to keep it concrete
+on this blog. For me, One Health means at least three things:
+
+- **Shared data and shared surveillance.** Human, animal, and
+  environmental health agencies in most of Southeast Asia (and most
+  of the world) still track their own subsets of the picture in
+  their own systems. The useful work is often the boring work of
+  getting those datasets to speak to each other.
+- **Conservation as disease prevention.** Keeping forests standing,
+  keeping wild populations viable, and enforcing wildlife-trade
+  regulations aren't separate from pandemic preparedness — they
+  *are* pandemic preparedness, delivered upstream. The pangolin that
+  stays in the forest doesn't enter a supply chain.
+- **Field-first, lab-second.** The most important questions are
+  almost never answered by a sample alone. They're answered by
+  someone who has actually stood in the farm, the forest edge, or
+  the market, and can tell you what "normal" looks like there.
+
+## What I want to write about here
+
+Expect short, unhurried pieces on:
+
+- Wildlife conservation and illegal wildlife trade in Southeast Asia
+- Emerging infectious diseases and what the underlying ecology is
+  actually telling us
+- Honest notes on using R and reproducible workflows for movement
+  ecology, spatial epidemiology, and disease modelling
+- Field stories — the slow, strange, wonderful parts of the work
+
+If any of this resonates with you — whether you're a vet, a student,
+a conservation colleague, or someone who just loves wildlife — I'd
+love to [hear from you](../../contact.qmd).
+
+— Wantida (Wow)

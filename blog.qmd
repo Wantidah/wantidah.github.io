@@ -1,0 +1,22 @@
+---
+title: "Blog"
+subtitle: "Notes on wildlife conservation, disease ecology, and One Health"
+image: images/mountain.jpeg
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  feed: true
+  fields: [date, title, description, categories, reading-time]
+page-layout: full
+title-block-banner: images/mountain.jpeg
+title-block-banner-color: "#faf7f1"
+toc: false
+---
+
+Short, plain-language posts about my research, things I read, and
+thoughts from the field. Mostly wildlife conservation and disease ecology
+— occasionally other things that catch my attention.

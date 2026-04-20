@@ -1,0 +1,121 @@
+---
+title: "Publications"
+toc: true
+toc-depth: 2
+---
+
+A full list of my peer-reviewed papers, conference presentations, and
+preprints. You can also find me on
+[Google Scholar](https://scholar.google.com/citations?user=4GTDIhMAAAAJ&hl=en)
+and [ORCID](https://orcid.org/0000-0002-3526-9136) — my
+[CV (PDF)](files/wantida-cv.pdf) has the definitive list.
+
+*My name is in **bold**; clickable DOIs link each paper.*
+
+## Peer-reviewed publications
+
+### 2025
+
+- Giglio, R. M., Westmoreland, A., Wilber, M., Wilson-Henjum, G.,
+  Chan, A. N., Gardner, B., **Horpiencharoen, W.**, Gagne, R. B.,
+  Corondi, A., Baker, A. & Combs, M. (2025). *Viral outbreak dynamics
+  and evolution in wildlife at the interface with humans.* **Biology
+  Letters.** [[DOI]](https://doi.org/10.1098/rsbl.2025.0540)
+
+- **Horpiencharoen, W.**, Marshall, J. C., Muylaert, R. L., John, R. S.,
+  & Hayman, D. T. S. (2025). *Spatial risk of pathogen transmission
+  from cattle to vulnerable and endangered wild bovids in Thailand.*
+  **Conservation Science and Practice.**
+  [[DOI]](https://doi.org/10.1111/csp2.70111)
+
+### 2024
+
+- **Horpiencharoen, W.**, Muylaert, R. L., John, R. S., Marshall, J. C.,
+  Lynam, A., Ngoprasert, D., Godfrey, A., Riggio, A., Gale, G., Ash, E.,
+  Bisi, F., Cremonesi, G., Clements, G. R., Lynam, A., Shwe, N. M.,
+  Pin, C., Gray, T. N. E., Aung, S. S., Nakbun, S., … & Hayman, D. T. S.
+  (2024). *Mapping threatened Thai bovids provides opportunities for
+  improved conservation outcomes in Asia.* **Royal Society Open
+  Science.** [[DOI]](https://doi.org/10.1098/rsos.240574)
+
+- **Horpiencharoen, W.**, Marshall, J. C., Muylaert, R. L., John, R. S.,
+  & Hayman, D. T. S. (2024). *Impact of infectious diseases on wild
+  Bovidae populations in Thailand: insights from population modelling
+  and disease dynamics.* **Journal of the Royal Society Interface.**
+  [[DOI]](https://doi.org/10.1098/rsif.2024.0278)
+
+### 2023
+
+- Jacobson, S. L., Dechanupong, J., **Horpiencharoen, W.**,
+  Yindee, M., & Plotnik, J. M. (2023). *Innovating to solve a novel
+  puzzle: wild Asian elephants vary in their ability to problem solve.*
+  **Animal Behaviour.**
+  [[DOI]](https://doi.org/10.1016/j.anbehav.2023.08.019)
+
+- Yindee, M., Thomas, W., Wajjawalku, W., Wongsawang, W., Income, N.,
+  **Horpiencharoen, W.**, … & Ketpun, D. (2023). *Clinical haematology,
+  biochemistry profiles and erythrocytic morphology of confiscated
+  Sunda pangolins (Manis javanica) in the Centre for Rehabilitation and
+  Quarantine of Confiscated Animals, Wildlife and Alien Species,
+  Thailand.* **Veterinary Integrative Sciences, 21(2),** 607–622.
+  [[DOI]](https://doi.org/10.12982/VIS.2023.043)
+
+### 2020
+
+- **Horpiencharoen, W.**, Thongratsakul, S., & Poolkhet, C. (2020).
+  *Risk factors associated with environmental mastitis in clinical
+  cases at small dairies in western Thailand.* **Agriculture and
+  Natural Resources, 54(2),** 190–196.
+  [[Link]](https://li01.tci-thaijo.org/index.php/anres/article/view/242185)
+
+### 2019
+
+- **Horpiencharoen, W.**, Thongratsakul, S., & Poolkhet, C. (2019).
+  *Risk factors of clinical mastitis and antimicrobial susceptibility
+  test results of mastitis milk from dairy cattle in western Thailand:
+  Bayesian network analysis.* **Preventive Veterinary Medicine, 164,**
+  49–55. [[DOI]](https://doi.org/10.1016/j.prevetmed.2019.01.014)
+
+- Leelahapongsathon, K., **Horpiencharoen, W.**, Thongyuan, S.,
+  Kasemsuwan, S., & Pinyopummintr, T. (2019). *Rapid community dog
+  assessment in rabies endemic area.* **Proceedings of the
+  International Journal of Infectious Diseases, 79,** 35.
+  [[DOI]](https://doi.org/10.1016/j.ijid.2018.11.098)
+
+## Conference presentations
+
+### Oral
+
+- **Horpiencharoen, W.** et al. (April 2025). *Contact network of
+  white-tailed deer exposed to SARS-CoV-2 in a residential community in
+  central Pennsylvania.* 80th Annual Northeast Fish & Wildlife
+  Conference, NH, USA.
+  [[Program]](https://www.neafwa.org/schedule-2025.html)
+- **Horpiencharoen, W.** et al. (October 2024). *Assessing wild bovid
+  population dynamics and impact from infectious diseases in Thailand.*
+  Wildlife Society's 31st Annual Conference, Baltimore, MD, USA.
+- **Horpiencharoen, W.** et al. (July 2023). *Mapping the risk of
+  disease transmission between wild bovids and domestic livestock in
+  Thailand.* 25th International Congress on Modelling and Simulation,
+  Darwin, Australia.
+  [[DOI]](https://doi.org/10.36334/modsim.2023.horpiencharoen)
+- **Horpiencharoen, W.** et al. (September 2022). *Identifying
+  remaining habitats suitable for wild bovids in Thailand.* 23rd Khon
+  Kaen Veterinary Annual International Conference (KVAC), Thailand.
+  **— Best Oral Presentation Award.**
+
+### Poster
+
+- **Horpiencharoen, W.** et al. (December 2021). *Habitat suitability
+  and protected areas for endangered bovids in Asia.* 7th One Health
+  Aotearoa Symposium, New Zealand.
+- **Horpiencharoen, W.** et al. (June 2019). *Methods for collecting
+  ethnological data on Asian elephants with applications for
+  conservation.* 2nd Young Conservation Scientists Conference, Nakhon
+  Ratchasima, Thailand.
+
+## Awards
+
+- Best Oral Presentation, 23rd KVAC (2022)
+- Best Oral Presentation, 20th case-study presentation, Kasetsart
+  University (2011)

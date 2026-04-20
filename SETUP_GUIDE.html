@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Setup guide — wantidah-website (GitHub Desktop edition)</title>
+<style>
+  :root {
+    --sage:     #7a8f6b;
+    --moss:     #4a5d3a;
+    --sand:     #e9e2d3;
+    --clay:     #b8654a;
+    --cream:    #faf7f1;
+    --ink:      #2d2a26;
+    --ink-soft: #5a534a;
+    --rule:     #d8cfbd;
+    --code-bg:  #f3efe6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Aptos", "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 1.0625rem;
+    margin: 0;
+    padding: 2rem 1rem 4rem 1rem;
+  }
+  main { max-width: 72ch; margin: 0 auto; }
+  h1, h2, h3 { color: var(--moss); letter-spacing: -0.005em; }
+  h1 { font-size: 2.1rem; margin: 0 0 0.4rem 0; }
+  h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--sand);
+    padding-bottom: 0.35rem;
+    margin-top: 2.4rem;
+  }
+  h3 { font-size: 1.15rem; margin-top: 1.8rem; }
+  .subtitle { color: var(--ink-soft); margin-top: 0; }
+  a { color: var(--moss); text-decoration: none; border-bottom: 1px dotted rgba(122,143,107,0.5); }
+  a:hover { color: var(--clay); border-bottom-color: var(--clay); }
+  code {
+    background: var(--code-bg);
+    color: var(--moss);
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+    font-size: 0.95em;
+    font-family: "Menlo", "Consolas", "Courier New", monospace;
+  }
+  pre {
+    background: var(--code-bg);
+    color: var(--ink);
+    border-left: 4px solid var(--sage);
+    padding: 0.9rem 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 0.95rem;
+  }
+  pre code { background: transparent; padding: 0; color: inherit; }
+  ol.toc { background: var(--sand); border-radius: 6px; padding: 1rem 1.2rem 1rem 2.2rem; }
+  ol.toc li { margin: 0.25rem 0; }
+  .callout {
+    border-left: 4px solid var(--clay);
+    background: #fbf3ee;
+    padding: 0.8rem 1rem;
+    border-radius: 4px;
+    margin: 1.2rem 0;
+  }
+  .callout.tip { border-left-color: var(--sage); background: #f4f7ef; }
+  .callout strong { color: var(--moss); }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+  footer {
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--rule);
+  }
+  .badge {
+    display: inline-block;
+    background: var(--sand);
+    color: var(--moss);
+    padding: 0.1em 0.6em;
+    border-radius: 999px;
+    font-size: 0.85em;
+    font-weight: 600;
+    margin-left: 0.4rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Setup guide <span class="badge">GitHub Desktop edition</span></h1>
+<p class="subtitle">The easy version. You use buttons in GitHub Desktop for Git and only type two Quarto commands in Terminal. One-time setup ~20 minutes; after that, publishing an update takes about a minute.</p>
+
+<h2>The 6 steps</h2>
+<ol class="toc">
+  <li><a href="#step-1">Install Quarto</a></li>
+  <li><a href="#step-2">Sign in to GitHub Desktop &amp; clone the repo</a></li>
+  <li><a href="#step-3">Preview the site locally</a></li>
+  <li><a href="#step-4">Publish the site (first time)</a></li>
+  <li><a href="#step-5">Turn on GitHub Pages</a></li>
+  <li><a href="#step-6">Day-to-day: edit &amp; update</a></li>
+</ol>
+<p>Plus an optional <a href="#step-7">Step 7 — send an offline copy to a friend</a>.</p>
+
+<hr>
+
+<h2 id="step-1">Step 1 — Install Quarto</h2>
+<p>Quarto is what turns your <code>.qmd</code> files into web pages.</p>
+<ol>
+  <li>Go to <a href="https://quarto.org/docs/get-started/">quarto.org/docs/get-started</a>.</li>
+  <li>Download the Mac installer and run it. Accept the defaults.</li>
+  <li>Open <strong>Terminal</strong> (Applications → Utilities → Terminal) and check it installed:
+<pre><code>quarto --version</code></pre>
+  You should see a version like <code>1.5.57</code>. If you see &ldquo;command not found&rdquo;, restart your Mac and try again.</li>
+</ol>
+
+<h2 id="step-2">Step 2 — Sign in to GitHub Desktop and clone the repo</h2>
+<p>GitHub Desktop replaces everything you'd otherwise do with terminal Git.</p>
+<ol>
+  <li>Open <strong>GitHub Desktop</strong>.</li>
+  <li>Sign in with your GitHub account (<code>File → Options → Accounts → Sign in</code> on Windows, or <code>GitHub Desktop → Settings → Accounts</code> on Mac).</li>
+  <li>Clone your website repo: <strong>File → Clone repository</strong> → pick <code>Wantidah/wantidah.github.io</code> from the list → choose a local folder (e.g. <code>/Users/whorpien/wantidah-website</code>) → click <strong>Clone</strong>.</li>
+  <li>If the repo is empty on GitHub, copy all the files from your current project folder into the cloned folder (so they live alongside the hidden <code>.git</code> folder).</li>
+  <li>GitHub Desktop will immediately show the files in its &ldquo;Changes&rdquo; tab. Write a short summary at the bottom-left (e.g. <em>&ldquo;Initial site scaffold&rdquo;</em>) and click <strong>Commit to main</strong>, then <strong>Push origin</strong> at the top.</li>
+</ol>
+<div class="callout tip"><strong>Already using this folder as your project?</strong> Instead of cloning, in GitHub Desktop use <strong>File → Add local repository</strong> and point it at <code>/Users/whorpien/wantidah-website</code>. If it says &ldquo;not a git repo&rdquo;, click <strong>create a repository</strong> when prompted, then use <strong>Repository → Push</strong> to send it up.</div>
+
+<h2 id="step-3">Step 3 — Preview the site locally</h2>
+<p>Before publishing, check the site looks right on your Mac.</p>
+<ol>
+  <li>In Terminal, change into the website folder:
+<pre><code>cd /Users/whorpien/wantidah-website</code></pre>
+  </li>
+  <li>Start the preview:
+<pre><code>quarto preview</code></pre>
+  This opens your browser at something like <code>http://localhost:4444</code>. Any time you save a <code>.qmd</code> file, it reloads automatically.</li>
+  <li>Click through: Home → About → Research → Publications → Blog → Contact (all inside the three-line menu at the top-left).</li>
+  <li>Press <strong>Ctrl+C</strong> in Terminal to stop the preview when done.</li>
+</ol>
+
+<h2 id="step-4">Step 4 — Publish the site (first time)</h2>
+<p>Quarto has a one-liner that builds the site and pushes it to a special <code>gh-pages</code> branch.</p>
+<ol>
+  <li>In Terminal (still in the project folder):
+<pre><code>quarto publish gh-pages</code></pre>
+  </li>
+  <li>Type <strong>y</strong> when it asks you to confirm.</li>
+  <li>Quarto will render the site and push it. When it finishes, it prints your live URL: <code>https://wantidah.github.io</code>.</li>
+</ol>
+<div class="callout">If it fails with &ldquo;repo not found&rdquo; or a permissions error, run <code>gh auth login</code> once (install from <a href="https://cli.github.com">cli.github.com</a>), or make sure you're signed in to GitHub Desktop. Retry.</div>
+
+<h2 id="step-5">Step 5 — Turn on GitHub Pages</h2>
+<p>One-time switch in your repo's settings.</p>
+<ol>
+  <li>Go to <a href="https://github.com/Wantidah/wantidah.github.io/settings/pages">your Pages settings</a>.</li>
+  <li>Under <strong>Source</strong>, pick <strong>Deploy from a branch</strong>.</li>
+  <li>Under <strong>Branch</strong>, pick <strong>gh-pages</strong> and folder <strong>/ (root)</strong>. Click <strong>Save</strong>.</li>
+  <li>Wait ~1 minute, refresh, and you'll see: <em>Your site is live at https://wantidah.github.io</em>.</li>
+</ol>
+
+<h2 id="step-6">Step 6 — Day-to-day: edit &amp; update</h2>
+<p>The short loop you'll use forever.</p>
+<h3>A. Edit</h3>
+<p>Open the <code>.qmd</code> file in your editor (RStudio, VS Code, anything). Save.</p>
+<h3>B. Preview (optional but nice)</h3>
+<pre><code>quarto preview</code></pre>
+<h3>C. Save changes to GitHub (with GitHub Desktop)</h3>
+<ol>
+  <li>Open GitHub Desktop. You'll see your edits in &ldquo;Changes&rdquo;.</li>
+  <li>Write a short summary (e.g. <em>&ldquo;Add May blog post&rdquo;</em>).</li>
+  <li>Click <strong>Commit to main</strong>.</li>
+  <li>Click <strong>Push origin</strong> at the top.</li>
+</ol>
+<h3>D. Publish the updated site</h3>
+<pre><code>quarto publish gh-pages</code></pre>
+<p>Type <strong>y</strong> to confirm. Changes appear at <code>https://wantidah.github.io</code> within a minute.</p>
+
+<div class="callout tip"><strong>Cheat sheet — the whole workflow:</strong><br>
+Edit your <code>.qmd</code> → Commit &amp; Push in GitHub Desktop → run <code>quarto publish gh-pages</code> in Terminal. Done.
+</div>
+
+<h3>Add a new blog post</h3>
+<ol>
+  <li>In Finder, duplicate <code>posts/welcome/</code> and rename to something like <code>posts/2026-05-bats-and-ranches/</code>.</li>
+  <li>Open <code>index.qmd</code> inside it and update the front matter:
+<pre><code>---
+title: "Bats and ranches: notes from the field"
+description: "What we saw in northern Thailand this May"
+date: "2026-05-02"
+categories: [wildlife, field-notes, one-health]
+image: thumbnail.jpg
+---</code></pre>
+  </li>
+  <li>Write your post, drop a <code>thumbnail.jpg</code> in the same folder.</li>
+  <li>Preview → Commit &amp; Push (GitHub Desktop) → <code>quarto publish gh-pages</code>.</li>
+</ol>
+
+<h2 id="step-7">Step 7 — Send an offline copy to a friend (optional)</h2>
+<p>If someone wants to see the site without it being live (e.g. draft feedback), you can bundle the whole site into one zip.</p>
+<ol>
+  <li>In Terminal:
+<pre><code>cd /Users/whorpien/wantidah-website
+chmod +x build-offline.sh   # first time only
+./build-offline.sh</code></pre>
+  </li>
+  <li>You'll get <code>wantidah-website-offline.zip</code> in the project folder. Email it or drop it in Dropbox.</li>
+  <li>Your friend unzips anywhere, double-clicks <code>index.html</code>, and the site opens in their browser. No internet, no server.</li>
+</ol>
+
+<hr>
+
+<h2>Quick troubleshooting</h2>
+<p><strong>&ldquo;quarto: command not found&rdquo;</strong> — Quarto isn't on your PATH. Restart Terminal, or restart your Mac. Check with <code>which quarto</code>.</p>
+<p><strong>Pages shows a README, not the site</strong> — the Pages source is pointing at <code>main</code>. Go back to Step 5 and pick <code>gh-pages</code>.</p>
+<p><strong>I updated but the live site looks old</strong> — hard-refresh (<kbd>Cmd+Shift+R</kbd>). GitHub Pages caches for a few minutes.</p>
+<p><strong>Conflict in GitHub Desktop</strong> — click <strong>Pull</strong> first (top bar), resolve any highlighted files, then commit &amp; push again.</p>
+
+<footer>© 2026 Wantida Horpiencharoen · Setup guide for wantidah-website</footer>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,67 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - "files/**"
+    - "images/**"
+
+website:
+  title: ""                 # no brand text in the top-left navbar
+  description: "Wantida Horpiencharoen — veterinary epidemiologist, wildlife disease ecologist, One Health researcher"
+  site-url: "https://wantidah.github.io"
+  repo-url: "https://github.com/Wantidah/wantidah.github.io"
+  favicon: images/favicon.png
+
+  navbar:
+    background: light
+    collapse-below: xxl        # always show the hamburger (three-line) menu top-left
+    logo: ""
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: blog.qmd
+        text: Blog
+      - href: contact.qmd
+        text: Contact
+    # social icons intentionally moved to the page footer
+    # right: []
+
+  page-footer:
+    border: true
+    left: "© 2026 Wantida Horpiencharoen"
+    center:
+      - icon: envelope
+        href: mailto:wantidah@gmail.com
+        aria-label: Email
+      - icon: github
+        href: https://github.com/Wantidah
+        aria-label: GitHub
+      - icon: mortarboard
+        href: https://scholar.google.com/citations?user=4GTDIhMAAAAJ&hl=en
+        aria-label: Google Scholar
+      - icon: person-badge
+        href: https://orcid.org/0000-0002-3526-9136
+        aria-label: ORCID
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]
+    css: styles.css
+    toc: true
+    toc-location: right
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    code-copy: true
+
+execute:
+  freeze: auto

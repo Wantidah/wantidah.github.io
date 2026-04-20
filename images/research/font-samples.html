@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Handwriting font samples — mastitis diagram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Architects+Daughter&family=Shadows+Into+Light&family=Coming+Soon&family=Gochi+Hand&family=Indie+Flower&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sage:#7a8f6b; --moss:#4a5d3a; --sand:#e9e2d3; --clay:#b8654a;
+    --cream:#faf7f1; --ink:#2d2a26; --ink-soft:#5a534a; --rule:#d8cfbd;
+    --blue:#3d6a88; --green:#3d7a3d; --gold:#a07a10; --orange:#a85020;
+  }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Aptos", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    margin: 0; padding: 2rem;
+    line-height: 1.5;
+  }
+  h1 {
+    color: var(--moss);
+    font-weight: 600;
+    margin-top: 0;
+  }
+  .intro {
+    color: var(--ink-soft);
+    max-width: 64ch;
+    margin-bottom: 2rem;
+  }
+  .sample {
+    background: white;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .sample .label {
+    display: inline-block;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sage);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 0.15rem 0.7rem;
+    margin-bottom: 0.6rem;
+  }
+  .sample .note {
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  /* shared sample-content sizing — matches the diagram */
+  .demo .title    { font-size: 36px; font-weight: 700; color: var(--moss); margin: 0 0 0.4rem; }
+  .demo .subtitle { font-size: 22px; color: var(--ink-soft); margin: 0 0 1.1rem; }
+  .demo .row      {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: baseline;
+    padding: 0.35rem 0;
+    border-bottom: 1px dashed var(--rule);
+  }
+  .demo .row .name { font-weight: 700; font-size: 22px; color: var(--ink); }
+  .demo .row .pct  { font-weight: 600; font-size: 20px; color: var(--clay); }
+  .demo .hdr-blue   { color: var(--blue);   font-weight: 700; font-size: 26px; margin-top: 1.2rem; }
+  .demo .hdr-gold   { color: var(--gold);   font-weight: 700; font-size: 26px; }
+  .demo .hdr-green  { color: var(--green);  font-weight: 700; font-size: 26px; }
+  .demo .hdr-orange { color: var(--orange); font-weight: 700; font-size: 26px; }
+  .demo .box {
+    background: #f3e3a2;
+    border: 2px solid var(--ink);
+    border-radius: 14px;
+    padding: 1rem 1.25rem;
+    margin-top: 0.4rem;
+  }
+  .demo .key {
+    font-size: 20px;
+    margin-top: 0.8rem;
+  }
+
+  /* per-font classes */
+  .f-patrick  { font-family: "Patrick Hand",        cursive; }
+  .f-arch     { font-family: "Architects Daughter", cursive; }
+  .f-shadows  { font-family: "Shadows Into Light",  cursive; }
+  .f-coming   { font-family: "Coming Soon",         cursive; }
+
+  /* side-by-side mini comparison at top */
+  .compare {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .compare .cell {
+    background: white;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+  }
+  .compare .cell h3 {
+    font-family: "Aptos", "Segoe UI", sans-serif;
+    font-size: 0.85rem;
+    color: var(--sage);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 0.5rem;
+  }
+  .compare .cell .big   { font-size: 30px; font-weight: 700; color: var(--moss); }
+  .compare .cell .small { font-size: 20px; color: var(--ink); margin-top: 0.3rem; }
+</style>
+</head>
+<body>
+  <h1>Handwriting font samples for the mastitis diagram</h1>
+  <p class="intro">
+    Four Google-Fonts options. Each panel shows the same text that appears in your
+    diagram: the title, a column header, a pathogen row with percentage, the yellow
+    culture box, and one key finding. Pick the one that reads best to you.
+  </p>
+
+  <div class="compare">
+    <div class="cell">
+      <h3>1 · Patrick Hand</h3>
+      <div class="big f-patrick">Streptococcus spp.</div>
+      <div class="small f-patrick">16.7% &nbsp;·&nbsp; Floor type</div>
+    </div>
+    <div class="cell">
+      <h3>2 · Architects Daughter</h3>
+      <div class="big f-arch">Streptococcus spp.</div>
+      <div class="small f-arch">16.7% &nbsp;·&nbsp; Floor type</div>
+    </div>
+    <div class="cell">
+      <h3>3 · Shadows Into Light</h3>
+      <div class="big f-shadows">Streptococcus spp.</div>
+      <div class="small f-shadows">16.7% &nbsp;·&nbsp; Floor type</div>
+    </div>
+    <div class="cell">
+      <h3>4 · Coming Soon</h3>
+      <div class="big f-coming">Streptococcus spp.</div>
+      <div class="small f-coming">16.7% &nbsp;·&nbsp; Floor type</div>
+    </div>
+  </div>
+
+  <!-- ============= 1. Patrick Hand ============= -->
+  <div class="sample">
+    <span class="label">Option 1</span>
+    <div class="note"><strong>Patrick Hand</strong> — rounded, tidy notebook handwriting. Very legible. My recommendation.</div>
+    <div class="demo f-patrick">
+      <p class="title">Mastitis in small-holder dairy cows — a schematic network</p>
+      <p class="subtitle">farm practices → pathogens → clinical signs &amp; antibiotic susceptibility</p>
+      <div class="hdr-blue">Farm management</div>
+      <div class="row"><span class="name">Floor type</span><span class="pct">concrete / rubber · mixed</span></div>
+      <div class="row"><span class="name">Dry-cow therapy</span><span class="pct">yes · no</span></div>
+      <div class="box">
+        <div class="hdr-gold" style="margin-top:0;">Pathogens in milk</div>
+        <div class="row"><span class="name">Streptococcus spp.</span><span class="pct">16.7%</span></div>
+        <div class="row"><span class="name">Staphylococcus spp.</span><span class="pct">11.9%</span></div>
+        <div class="row"><span class="name">Escherichia coli</span><span class="pct">7.5%</span></div>
+      </div>
+      <div class="hdr-orange" style="margin-top:1rem;">Antibiotic susceptibility</div>
+      <div class="row"><span class="name">Amox.-clav. (AMC)</span><span class="pct" style="color:var(--green);">81% S</span></div>
+      <div class="row"><span class="name">Penicillin G</span><span class="pct">40% R</span></div>
+      <div class="key">➤ 40% of isolates are resistant to penicillin G — first-line treatment should favour AMC or cloxacillin.</div>
+    </div>
+  </div>
+
+  <!-- ============= 2. Architects Daughter ============= -->
+  <div class="sample">
+    <span class="label">Option 2</span>
+    <div class="note"><strong>Architects Daughter</strong> — architectural block-print, slightly uppercase-leaning. Very clean, engineering-drawing feel.</div>
+    <div class="demo f-arch">
+      <p class="title">Mastitis in small-holder dairy cows — a schematic network</p>
+      <p class="subtitle">farm practices → pathogens → clinical signs &amp; antibiotic susceptibility</p>
+      <div class="hdr-blue">Farm management</div>
+      <div class="row"><span class="name">Floor type</span><span class="pct">concrete / rubber · mixed</span></div>
+      <div class="row"><span class="name">Dry-cow therapy</span><span class="pct">yes · no</span></div>
+      <div class="box">
+        <div class="hdr-gold" style="margin-top:0;">Pathogens in milk</div>
+        <div class="row"><span class="name">Streptococcus spp.</span><span class="pct">16.7%</span></div>
+        <div class="row"><span class="name">Staphylococcus spp.</span><span class="pct">11.9%</span></div>
+        <div class="row"><span class="name">Escherichia coli</span><span class="pct">7.5%</span></div>
+      </div>
+      <div class="hdr-orange" style="margin-top:1rem;">Antibiotic susceptibility</div>
+      <div class="row"><span class="name">Amox.-clav. (AMC)</span><span class="pct" style="color:var(--green);">81% S</span></div>
+      <div class="row"><span class="name">Penicillin G</span><span class="pct">40% R</span></div>
+      <div class="key">➤ 40% of isolates are resistant to penicillin G — first-line treatment should favour AMC or cloxacillin.</div>
+    </div>
+  </div>
+
+  <!-- ============= 3. Shadows Into Light ============= -->
+  <div class="sample">
+    <span class="label">Option 3</span>
+    <div class="note"><strong>Shadows Into Light</strong> — light, slightly slanted pen-script. Pretty; a touch thinner at small sizes.</div>
+    <div class="demo f-shadows">
+      <p class="title">Mastitis in small-holder dairy cows — a schematic network</p>
+      <p class="subtitle">farm practices → pathogens → clinical signs &amp; antibiotic susceptibility</p>
+      <div class="hdr-blue">Farm management</div>
+      <div class="row"><span class="name">Floor type</span><span class="pct">concrete / rubber · mixed</span></div>
+      <div class="row"><span class="name">Dry-cow therapy</span><span class="pct">yes · no</span></div>
+      <div class="box">
+        <div class="hdr-gold" style="margin-top:0;">Pathogens in milk</div>
+        <div class="row"><span class="name">Streptococcus spp.</span><span class="pct">16.7%</span></div>
+        <div class="row"><span class="name">Staphylococcus spp.</span><span class="pct">11.9%</span></div>
+        <div class="row"><span class="name">Escherichia coli</span><span class="pct">7.5%</span></div>
+      </div>
+      <div class="hdr-orange" style="margin-top:1rem;">Antibiotic susceptibility</div>
+      <div class="row"><span class="name">Amox.-clav. (AMC)</span><span class="pct" style="color:var(--green);">81% S</span></div>
+      <div class="row"><span class="name">Penicillin G</span><span class="pct">40% R</span></div>
+      <div class="key">➤ 40% of isolates are resistant to penicillin G — first-line treatment should favour AMC or cloxacillin.</div>
+    </div>
+  </div>
+
+  <!-- ============= 4. Coming Soon ============= -->
+  <div class="sample">
+    <span class="label">Option 4</span>
+    <div class="note"><strong>Coming Soon</strong> — thin marker-pen printing, whiteboard-note feel.</div>
+    <div class="demo f-coming">
+      <p class="title">Mastitis in small-holder dairy cows — a schematic network</p>
+      <p class="subtitle">farm practices → pathogens → clinical signs &amp; antibiotic susceptibility</p>
+      <div class="hdr-blue">Farm management</div>
+      <div class="row"><span class="name">Floor type</span><span class="pct">concrete / rubber · mixed</span></div>
+      <div class="row"><span class="name">Dry-cow therapy</span><span class="pct">yes · no</span></div>
+      <div class="box">
+        <div class="hdr-gold" style="margin-top:0;">Pathogens in milk</div>
+        <div class="row"><span class="name">Streptococcus spp.</span><span class="pct">16.7%</span></div>
+        <div class="row"><span class="name">Staphylococcus spp.</span><span class="pct">11.9%</span></div>
+        <div class="row"><span class="name">Escherichia coli</span><span class="pct">7.5%</span></div>
+      </div>
+      <div class="hdr-orange" style="margin-top:1rem;">Antibiotic susceptibility</div>
+      <div class="row"><span class="name">Amox.-clav. (AMC)</span><span class="pct" style="color:var(--green);">81% S</span></div>
+      <div class="row"><span class="name">Penicillin G</span><span class="pct">40% R</span></div>
+      <div class="key">➤ 40% of isolates are resistant to penicillin G — first-line treatment should favour AMC or cloxacillin.</div>
+    </div>
+  </div>
+
+  <p style="color: var(--ink-soft); text-align:center; margin-top: 2rem;">
+    Tell me the number (1–4) you like and I'll swap the mastitis diagram to it.
+  </p>
+</body>
+</html>

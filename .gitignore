@@ -1,0 +1,28 @@
+# Quarto build cache
+/.quarto/
+**/*.quarto_ipynb
+
+# Don't commit the rendered site if you use a GitHub Action to build.
+# Keep it committed if you publish via `quarto publish gh-pages`.
+# (See SETUP_GUIDE.md — we use the `quarto publish gh-pages` route.)
+# /_site/
+/_freeze/
+
+# RStudio
+.Rproj.user/
+.Rhistory
+.Rdata
+.Ruserdata
+
+# macOS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# R data / large outputs
+*.rds
+*.Rproj.user
+
+# Secrets — never commit these
+.env
+.env.local
