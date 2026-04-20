@@ -22,11 +22,6 @@ and eight other U.S. states, in collaboration with USDA and USGS. The
 question: can deer act as a reservoir for SARS-CoV-2, and if so, what
 does that mean for spillback into people?
 
-I combine step-selection and home-range analysis (using the `amt`
-package in R), contact-network construction, stochastic compartmental
-models, and Bayesian inference of transmission parameters. A first
-paper on the Pennsylvania contact network is in preparation.
-
 ## Wild bovids, habitat, and infectious disease in Southeast Asia — my PhD
 
 My doctoral work at Massey University asked a simple question with

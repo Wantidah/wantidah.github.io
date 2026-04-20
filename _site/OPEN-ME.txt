@@ -1,7 +1,0 @@
-Wantida's website — offline copy
---------------------------------
-To view: double-click index.html (or open it in any browser).
-
-Everything is local — no server or internet required. A handful
-of web fonts fall back to system fonts when offline, which is
-expected and harmless.
