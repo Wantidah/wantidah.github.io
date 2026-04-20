@@ -27,7 +27,7 @@ simulations to map where threatened wild cattle species (gaur,
 banteng, wild water buffalo) overlap with domestic livestock and
 shared pathogens.
 
-## What I care about
+## Research interests
 
 - **One Health thinking** — treating human, animal, and environmental
   health as one connected system.
@@ -62,10 +62,8 @@ shared pathogens.
 
 ## Tools I use
 
-R (`tidyverse`, `sf`, `amt`, `glmmTMB`, `survival`, `mgcv`) · QGIS ·
-ArcGIS · stochastic compartmental models (SI/SEI/SIRS/SEIRS) ·
-Bayesian inference · contact-network analysis · species distribution /
-habitat suitability modelling (MaxEnt, GLM/GAM) · GitHub for
+R · QGIS · stochastic compartmental models (SI/SEI/SIRS/SEIRS) ·
+species distribution / habitat suitability modelling · GitHub for
 reproducible workflows.
 
 ## CV
