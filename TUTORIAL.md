@@ -1,4 +1,9 @@
-# Building and editing your Quarto research website
+---
+title: "Building and editing your Quarto research website"
+toc: true
+---
+
+<a id="top"></a>
 
 A tutorial for Wantida. Written for someone who is fluent in R, familiar with RStudio and RMarkdown, and new to web development.
 
@@ -8,21 +13,9 @@ You can read it top to bottom the first time, then come back to specific section
 
 ---
 
-## Table of contents
+<a id="sec-1"></a>
 
-1. [How the site works — the big picture](#1-how-the-site-works--the-big-picture)
-2. [Your file structure](#2-your-file-structure)
-3. [The daily workflow (edit → live)](#3-the-daily-workflow-edit--live)
-4. [Building a new site from scratch](#4-building-a-new-site-from-scratch)
-5. [File-by-file reference](#5-file-by-file-reference)
-6. [Editing recipes](#6-editing-recipes)
-7. [Publishing, privacy, and cost](#7-publishing-privacy-and-cost)
-8. [Troubleshooting](#8-troubleshooting)
-9. [Sending an offline copy to a friend](#9-sending-an-offline-copy-to-a-friend)
-
----
-
-## 1. How the site works — the big picture
+## How the site works — the big picture
 
 There are four moving parts. Learn these four and the rest of the tutorial will make sense.
 
@@ -35,19 +28,15 @@ The part that ties everything together is **GitHub Actions** — a robot that li
 
 Here is that whole loop as a diagram:
 
-```mermaid
-flowchart LR
-    A[Edit .qmd files<br/>on laptop] --> B[GitHub Desktop<br/>Commit + Push]
-    B --> C[GitHub Actions<br/>runs quarto render]
-    C --> D[gh-pages branch<br/>rendered HTML]
-    D --> E[wantidah.github.io<br/>live site]
-```
+![Publishing workflow: edit .qmd files on your laptop → commit and push with GitHub Desktop → GitHub Actions runs quarto render → gh-pages branch gets the rendered HTML → wantidah.github.io serves the live site.](images/tutorial-workflow.svg)
 
 Mental model if you know R: `.qmd` is to this site what `.Rmd` is to a bookdown or blogdown site. Quarto is a more modern, language-agnostic replacement for `rmarkdown::render()`. And GitHub Actions is the equivalent of telling a server "every time I commit, re-knit and re-deploy."
 
 ---
 
-## 2. Your file structure
+<a id="sec-2"></a>
+
+## Your file structure
 
 Here is everything in your repo, grouped by what it's for.
 
@@ -100,7 +89,9 @@ wantidah-website/
 
 ---
 
-## 3. The daily workflow (edit → live)
+<a id="sec-3"></a>
+
+## The daily workflow (edit → live)
 
 Once everything is set up, updating your site is four clicks and a wait.
 
@@ -119,34 +110,36 @@ If something looks broken, first stop: [github.com/Wantidah/wantidah.github.io/a
 
 ---
 
-## 4. Building a new site from scratch
+<a id="sec-4"></a>
 
-This section is for building a fresh website from an empty folder. If you're editing your existing site, skip to [§5](#5-file-by-file-reference). If you ever want to help a colleague build their own site, this is the path.
+## Building a new site from scratch
 
-### 4.1 Install the tools
+This section is for building a fresh website from an empty folder. If you're editing your existing site, skip to [File-by-file reference](#sec-5). If you ever want to help a colleague build their own site, this is the path.
+
+### Install the tools
 
 - **Quarto** — <https://quarto.org/docs/get-started/>. Accept defaults. Check: `quarto --version` in Terminal shows a version number.
 - **GitHub Desktop** — <https://desktop.github.com>. Sign in with your GitHub account.
 - **A text editor** — RStudio works. VS Code is also excellent.
 
-### 4.2 Create a GitHub repo
+### Create a GitHub repo
 
 On GitHub.com, click the `+` icon → **New repository**.
 
 - Name: **`your-username.github.io`** (the name must match your GitHub username exactly for the site to be served at `your-username.github.io`).
-- **Public**. (Pages only serves public repos for free — see [§7](#7-publishing-privacy-and-cost).)
+- **Public**. (Pages only serves public repos for free — see [Publishing, privacy, and cost](#sec-7).)
 - Initialize with a README: **yes**.
 - Click **Create repository**.
 
-### 4.3 Clone it with GitHub Desktop
+### Clone it with GitHub Desktop
 
 File → **Clone repository** → pick `your-username/your-username.github.io` → choose a local folder (for example `/Users/whorpien/wantidah-website`) → **Clone**.
 
 You now have an empty folder on your computer that is already connected to GitHub.
 
-### 4.4 Create the starter files
+### Create the starter files
 
-Inside the cloned folder, create each file from [§5](#5-file-by-file-reference) below. Copy the full contents exactly. You'll need at minimum:
+Inside the cloned folder, create each file from the [File-by-file reference](#sec-5) below. Copy the full contents exactly. You'll need at minimum:
 
 1. `_quarto.yml`
 2. `theme.scss`
@@ -157,7 +150,7 @@ Inside the cloned folder, create each file from [§5](#5-file-by-file-reference)
 7. `images/profile.jpeg` (any 800×800 photo)
 8. `.github/workflows/publish.yml`
 
-### 4.5 Preview it
+### Preview it
 
 ```bash
 cd /Users/whorpien/your-site-folder
@@ -166,11 +159,11 @@ quarto preview
 
 Browser opens. Click through the pages. If anything looks wrong, read the error in Terminal — it almost always points to a typo in the YAML front matter of a `.qmd` file.
 
-### 4.6 First commit + push
+### First commit + push
 
 In GitHub Desktop you'll see all the files in the **Changes** tab. Summary: `Initial site`. Click **Commit to main** → **Push origin**.
 
-### 4.7 Turn on GitHub Pages
+### Turn on GitHub Pages
 
 Go to [github.com/your-username/your-username.github.io/settings/pages](https://github.com/Wantidah/wantidah.github.io/settings/pages).
 
@@ -179,7 +172,7 @@ Go to [github.com/your-username/your-username.github.io/settings/pages](https://
 
 If `gh-pages` doesn't appear yet, that's fine — it'll be created the first time the GitHub Actions workflow runs.
 
-### 4.8 Wait for the Action to finish
+### Wait for the Action to finish
 
 Go to [github.com/your-username/your-username.github.io/actions](https://github.com/Wantidah/wantidah.github.io/actions). Click the most recent "Publish site" run. When it turns green ✓, refresh the Pages settings — `gh-pages` should now be selectable. Pick it and save.
 
@@ -187,11 +180,13 @@ Go to [github.com/your-username/your-username.github.io/actions](https://github.
 
 ---
 
-## 5. File-by-file reference
+<a id="sec-5"></a>
+
+## File-by-file reference
 
 This section embeds the full contents of every file so the tutorial is self-contained. You could rebuild the whole site by copying each block into its named file.
 
-### 5.1 `_quarto.yml` — site configuration
+### `_quarto.yml` — site configuration
 
 This is the master config. It controls the site title, URL, navbar items, footer, theme files, and rendering options.
 
@@ -272,7 +267,7 @@ execute:
 - `format.html.theme: [cosmo, theme.scss]` — start from the Bootstrap "cosmo" theme and overlay my `theme.scss` on top. This is how the warm earth-tone palette works.
 - `execute.freeze: auto` — if a `.qmd` file contains R or Python code, Quarto only re-runs it when that file changes, not on every render. Speeds up builds. If you don't have computed chunks, it doesn't matter.
 
-### 5.2 `theme.scss` — palette + typography
+### `theme.scss` — palette + typography
 
 SCSS is a dialect of CSS that supports variables and nesting. Quarto uses SCSS files to override Bootstrap theme variables before compiling to CSS. This is where 90 % of the site's look-and-feel lives.
 
@@ -356,7 +351,7 @@ body {
 
 To recolour the site, change these eight variables at the top of the file. That's the whole job.
 
-### 5.3 `styles.css` — small tweaks
+### `styles.css` — small tweaks
 
 CSS file for quick overrides that don't need SCSS variables. Edit this for one-off rules; edit `theme.scss` for palette/typography shifts.
 
@@ -443,9 +438,9 @@ main p > img {
 }
 ```
 
-### 5.4 `index.qmd` — home page
+### `index.qmd` — home page
 
-The home page is a plain Quarto document. The `.home-hero` block uses the CSS from §5.3 to center the photo and name at the top, then the rest of the page flows as left-aligned prose.
+The home page is a plain Quarto document. The `.home-hero` block uses the CSS from the `styles.css` section to center the photo and name at the top, then the rest of the page flows as left-aligned prose.
 
 ```qmd
 ---
@@ -491,7 +486,7 @@ Hi — I'm **Wow**, a postdoctoral researcher at **Penn State** ...
 - `` ```{=html} `` is a raw-HTML block — Quarto passes the contents through untouched. Use these when you need custom HTML (icons, styled divs) that Markdown can't express.
 - `::: {.callout-tip}` … `:::` is Quarto syntax for a callout box (tip / note / warning / important / caution).
 
-### 5.5 `about.qmd` — bio page
+### `about.qmd` — bio page
 
 A longer Markdown page with `## Section headers`. Key pieces:
 
@@ -534,7 +529,7 @@ reproducible workflows.
 
 The `.btn .btn-outline-primary` on a link turns it into a button styled by your theme.
 
-### 5.6 `research.qmd` — long-form research
+### `research.qmd` — long-form research
 
 Same pattern as about.qmd, but with figures, DOIs, and occasional raw-HTML blocks for SVG figures. For the mastitis + Western-Thailand maps, the SVGs are embedded via `<object>` so their external fonts (Patrick Hand) load:
 
@@ -553,7 +548,7 @@ For normal raster figures, Quarto's plain Markdown image syntax is enough:
 ![Caption text that will appear below the image.](images/habitat-suitability.png){fig-alt="Alt text for screen readers"}
 ```
 
-### 5.7 `publications.qmd` — paper list
+### `publications.qmd` — paper list
 
 Plain Markdown list, grouped by year. Your name is bolded with `**Horpiencharoen, W.**`. Each paper ends with `[[DOI]](https://doi.org/...)`.
 
@@ -575,7 +570,7 @@ toc-depth: 2
 
 A later upgrade (optional) is to keep your publications in a `references.bib` file (BibTeX) and let Quarto format them for you. Worth it if the list grows past ~30 papers.
 
-### 5.8 `blog.qmd` — blog landing page
+### `blog.qmd` — blog landing page
 
 The `listing:` block tells Quarto to auto-scan the `posts/` folder and list every post it finds there. You never have to edit this file when you add a new post.
 
@@ -600,7 +595,7 @@ Short, plain-language posts about my research, things I read, and
 thoughts from the field. ...
 ```
 
-### 5.9 `posts/_metadata.yml` — shared defaults
+### `posts/_metadata.yml` — shared defaults
 
 Front-matter keys you set here apply to *every* post in `posts/` automatically. Saves repeating yourself.
 
@@ -612,7 +607,7 @@ author: "Wantida"
 comments: false
 ```
 
-### 5.10 `posts/<slug>/index.qmd` — a blog post
+### `posts/<slug>/index.qmd` — a blog post
 
 One folder per post, named with a slug (e.g. `posts/welcome/` or `posts/2026-05-bats-and-ranches/`). Each folder has an `index.qmd` plus optional images.
 
@@ -635,11 +630,11 @@ Welcome — thanks for stopping by. ...
 - `image: thumbnail.jpg` is the card image on the blog listing. Put a `thumbnail.jpg` in the same folder.
 - `draft: true` hides the post from the listing — handy for work in progress.
 
-### 5.11 `contact.qmd` — contact info
+### `contact.qmd` — contact info
 
 A plain page. Email, GitHub, Scholar, ORCID; paragraphs for "Collaborations" and "Mentoring". No special syntax.
 
-### 5.12 `.github/workflows/publish.yml` — the auto-deploy
+### `.github/workflows/publish.yml` — the auto-deploy
 
 This is the robot. On every push to `main`, GitHub Actions:
 
@@ -684,7 +679,7 @@ jobs:
 - `peaceiris/actions-gh-pages@v4` is a third-party action that knows how to wipe `gh-pages` and push fresh HTML there.
 - `force_orphan: true` means `gh-pages` gets a clean new commit each time — no history buildup.
 
-### 5.13 `build-offline.sh` — send the site to a friend
+### `build-offline.sh` — send the site to a friend
 
 A helper Bash script that renders the site and zips it into one file. Use when you want someone to review the site without it being live on the internet.
 
@@ -711,9 +706,9 @@ zip -r -q -X "$ZIP_NAME" "$OUT_DIR"
 echo "✓ Done. Send $ZIP_NAME to your friend."
 ```
 
-Run it with `./build-offline.sh`. See [§9](#9-sending-an-offline-copy-to-a-friend).
+Run it with `./build-offline.sh`. See [Sending an offline copy to a friend](#sec-9).
 
-### 5.14 `README.md` — the GitHub landing page
+### `README.md` — the GitHub landing page
 
 Displayed automatically when anyone opens the repo on GitHub. Keep it short:
 
@@ -741,11 +736,13 @@ for the full walkthrough.
 
 ---
 
-## 6. Editing recipes
+<a id="sec-6"></a>
+
+## Editing recipes
 
 Day-to-day jobs, one mini-recipe each.
 
-### 6.1 Change a heading
+### Change a heading
 
 Open the `.qmd` file. Find the line starting with `##`. Edit the text after it. Save.
 
@@ -756,11 +753,11 @@ Open the `.qmd` file. Find the line starting with `##`. Edit the text after it. 
 
 Commit + push. ~2 min later, it's live.
 
-### 6.2 Add a paragraph
+### Add a paragraph
 
 Just add new text between existing paragraphs. One blank line between paragraphs is enough.
 
-### 6.3 Add a new navbar page
+### Add a new navbar page
 
 Two steps:
 
@@ -788,15 +785,15 @@ Two steps:
         ...
     ```
 
-### 6.4 Remove a navbar page
+### Remove a navbar page
 
 Delete its entry from `_quarto.yml`. You can keep the `.qmd` file around — it just won't appear in the menu.
 
-### 6.5 Reorder navbar items
+### Reorder navbar items
 
 Swap the order of the entries under `navbar.left:` in `_quarto.yml`. Top of the list = leftmost in the menu.
 
-### 6.6 Change the profile photo
+### Change the profile photo
 
 Replace `images/profile.jpeg` with your new photo. Same filename, same folder. Commit + push. Done.
 
@@ -811,7 +808,7 @@ And in `about.qmd`'s YAML:
 image: images/profile.jpeg
 ```
 
-### 6.7 Change the colour palette
+### Change the colour palette
 
 Open `theme.scss`. Edit the top section:
 
@@ -825,7 +822,7 @@ $cream:      #faf7f1;
 
 Use a tool like [coolors.co](https://coolors.co) to generate a new palette. Keep the *names* — the rest of the file references them — only change the values.
 
-### 6.8 Add an image to a page
+### Add an image to a page
 
 Put the image in `images/` (or a subfolder like `images/research/`). Reference it with Markdown image syntax:
 
@@ -835,7 +832,7 @@ Put the image in `images/` (or a subfolder like `images/research/`). Reference i
 
 The `fig-alt` is not optional for accessibility. Write one sentence describing what a sighted reader sees.
 
-### 6.9 Add a new publication
+### Add a new publication
 
 Open `publications.qmd`. Find the right year heading. Add a new bullet at the top of that year (most-recent first):
 
@@ -846,7 +843,7 @@ Open `publications.qmd`. Find the right year heading. Add a new bullet at the to
   **Journal Name.** [[DOI]](https://doi.org/10.xxxx/xxxxx)
 ```
 
-### 6.10 Add a new blog post
+### Add a new blog post
 
 1. Copy `posts/welcome/` to a new folder with a slug name, e.g. `posts/2026-05-bats-and-ranches/`.
 2. Open `index.qmd` in the new folder. Update the YAML:
@@ -866,11 +863,11 @@ Open `publications.qmd`. Find the right year heading. Add a new bullet at the to
 
 If you want to work on it privately first, set `draft: true` — the post won't appear in the listing until you flip it to `false`.
 
-### 6.11 Change the footer text
+### Change the footer text
 
 `_quarto.yml` → `website.page-footer.left` / `center` / `right`. Icons use Bootstrap Icons (see <https://icons.getbootstrap.com>).
 
-### 6.12 Change the site URL / switch to a custom domain
+### Change the site URL / switch to a custom domain
 
 1. Buy a domain (e.g. `wantida.science` from Namecheap / Cloudflare / Google Domains).
 2. In your repo Settings → Pages → **Custom domain** box, enter the domain.
@@ -879,7 +876,9 @@ If you want to work on it privately first, set `draft: true` — the post won't 
 
 ---
 
-## 7. Publishing, privacy, and cost
+<a id="sec-7"></a>
+
+## Publishing, privacy, and cost
 
 ### Three real scenarios
 
@@ -905,7 +904,9 @@ While you're revising content, your *draft* changes stay on your laptop until yo
 
 ---
 
-## 8. Troubleshooting
+<a id="sec-8"></a>
+
+## Troubleshooting
 
 ### "The live site is showing my README instead of the Quarto site"
 
@@ -943,7 +944,9 @@ Either (a) the repo is private on the free plan — make it public, or upgrade t
 
 ---
 
-## 9. Sending an offline copy to a friend
+<a id="sec-9"></a>
+
+## Sending an offline copy to a friend
 
 Sometimes you want a colleague to see the site without publishing it (reviewing a draft, a friend with no internet, etc). There is a helper script.
 
@@ -967,6 +970,8 @@ A handful of Google-hosted web fonts fall back to system fonts when offline — 
 
 ---
 
+<a id="sec-summary"></a>
+
 ## A quick reminder of the whole workflow
 
 Once everything is set up, **all you do** to update your site is:
@@ -976,7 +981,7 @@ Once everything is set up, **all you do** to update your site is:
 3. Wait ~1–2 min.
 4. Hard-refresh `wantidah.github.io`.
 
-If it breaks, check the [Actions tab](https://github.com/Wantidah/wantidah.github.io/actions) for the red ✗ and come back to [§8](#8-troubleshooting).
+If it breaks, check the [Actions tab](https://github.com/Wantidah/wantidah.github.io/actions) for the red ✗ and come back to [Troubleshooting](#sec-8).
 
 That's the whole thing. Have fun — and if you want to add things later (a custom domain, a references.bib for auto-formatted publications, a GitHub profile README so visitors to your GitHub profile see a "Visit my website" link), those are all one-afternoon projects.
 
