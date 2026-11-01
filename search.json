@@ -1,0 +1,198 @@
+[
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research explores how pathogens move among wildlife, livestock, and people — and how that knowledge can guide conservation and public health decisions. I work at three overlapping scales: the pathogen, the host community, and the landscape.\nBelow are the main stories that tie my work together. Each section links to the paper. Figures from my Royal Society and Wiley papers are reproduced under their original CC-BY licences; the mastitis diagram is an original schematic I drew to summarise the 2019 Preventive Veterinary Medicine paper."
+  },
+  {
+    "objectID": "research.html#sars-cov-2-in-white-tailed-deer-current-postdoctoral-work",
+    "href": "research.html#sars-cov-2-in-white-tailed-deer-current-postdoctoral-work",
+    "title": "Research",
+    "section": "SARS-CoV-2 in white-tailed deer — current postdoctoral work",
+    "text": "SARS-CoV-2 in white-tailed deer — current postdoctoral work\nAt Penn State I’m analysing GPS movement data and contact networks from white-tailed deer (Odocoileus virginianus) across Pennsylvania and eight other U.S. states, in collaboration with USDA and USGS. The question: can deer act as a reservoir for SARS-CoV-2, and if so, what does that mean for spillback into people?"
+  },
+  {
+    "objectID": "research.html#wild-bovids-habitat-and-infectious-disease-in-southeast-asia-my-phd",
+    "href": "research.html#wild-bovids-habitat-and-infectious-disease-in-southeast-asia-my-phd",
+    "title": "Research",
+    "section": "Wild bovids, habitat, and infectious disease in Southeast Asia — my PhD",
+    "text": "Wild bovids, habitat, and infectious disease in Southeast Asia — my PhD\nMy doctoral work at Massey University asked a simple question with surprisingly complex answers: where do Thailand’s threatened wild bovids still have suitable habitat, and where does that habitat overlap with domestic cattle — creating places of shared pathogens?\nFive bovid species still roam Thailand: gaur (Bos gaurus), banteng (Bos javanicus), wild water buffalo (Bubalus arnee), mainland serow (Capricornis sumatraensis) and Chinese goral (Naemorhedus griseus). Their populations have declined sharply under habitat fragmentation, hunting, and contact with domestic livestock that share their grazing grounds and pathogens.\n\nMapping the habitat that remains\nIn Horpiencharoen et al. (Royal Society Open Science, 2024), I built ecological niche models for all five species across 13 Asian countries and showed that over half of the suitable habitat for these wild bovids lies outside protected areas — meaning that conservation has to happen on the working landscape, not just inside reserves.\n\n\n\nHabitat suitability across the five wild bovid species of Southeast Asia, from Horpiencharoen et al. (2024). Warmer colours indicate higher predicted habitat suitability. © 2024 The Authors, CC-BY (R. Soc. Open Sci. 11, 240574).\n\n\n\n\nLayering species together — where the landscape holds many at once\nSuitability for one species is useful. Suitability for several species stacked together is what matters for designing conservation corridors. Summing the per-species maps gives a habitat-richness surface that flags the places where the most wild bovids could coexist — and where protection and monitoring give the biggest return.\n\n\n\nHabitat-richness map derived by stacking the five species-specific suitability layers. Darker pixels are places predicted to be suitable for more wild bovid species at once — the highest-priority corridors for multi-species conservation. © 2024 The Authors, CC-BY.\n\n\nRead the paper → DOI 10.1098/rsos.240574\n\n\nWhere wildlife and livestock collide: mapping pathogen-transmission risk\nIn Horpiencharoen et al. (Conservation Science and Practice, 2025), I overlaid those habitat-suitability maps with cattle density to find the interface zones — landscapes where wild bovids and domestic cattle are most likely to share pathogens.\nThe interface is dominated by forest edges, cropland, and unclassified forest, and — strikingly — Kuiburi National Park alone holds 274 km² of high-risk area for gaur and banteng. For wild water buffalo the largest risk zone (126 km²) overlaps with Huai Thabthan–Had Samran. These maps give conservation managers and veterinary services specific, mappable places to focus surveillance and mitigation.\n\n\n\nFigure 1 from Horpiencharoen et al. (2025) — Bivariate maps of wild bovid habitat suitability (blue) against cattle density (yellow); dark red pixels are the high-risk interface. © 2025 The Authors, CC-BY (Conservation Science and Practice, e70111).\n\n\nRead the paper → DOI 10.1111/csp2.70111\n\n\nWhat happens if disease actually crosses the fence?\nA map tells you where pathogens could spill, but not what that would do to the population. In Horpiencharoen et al. (Journal of the Royal Society Interface, 2024), I built stochastic compartmental models of a gaur population under six cattle-borne diseases: anthrax, bovine tuberculosis, haemorrhagic septicaemia, lumpy skin disease, foot-and-mouth disease, and brucellosis.\nThe key findings:\n\nChronic infections (brucellosis, bTB) cause the greatest long-term damage. Frequency-dependent brucellosis drove gaur populations down by ~97 %, with extinction in 16 % of simulations.\nAcute, high-fatality diseases (anthrax) had surprisingly small effects — infected animals die quickly and “burn out” the outbreak.\nDisease-free populations grew by an average of 228 % over 100 years — so healthy gaur can recover, if given the chance.\n\n\n\n\nModelled gaur population dynamics over 100 years, with and without each disease. Left column: single example stochastic simulations. Right column: 100 stochastic simulations. Compartments shown are susceptible (S), exposed (E), infected (I), recovered/immune (R) and removed (M), plus total. From Horpiencharoen et al. (2024), © The Authors, CC-BY (J. R. Soc. Interface 21, 20240278).\n\n\nThe total-population view at the end of 100 years makes the ordering of threats unmistakeable: the chronic, density-dependent infections (brucellosis, bovine tuberculosis) hollow the population out over decades, while the acute high-fatality infections burn through quickly and rebound. Disease-free populations grow steadily — a reminder that healthy gaur recover when given the chance.\n\n\n\nProjected gaur population sizes after 100 years under each disease scenario, relative to the disease-free baseline. The separation between chronic and acute disease effects is stark — brucellosis and bTB dominate the long-term risk picture. © 2024 The Authors, CC-BY.\n\n\nRead the paper → DOI 10.1098/rsif.2024.0278"
+  },
+  {
+    "objectID": "research.html#dairy-cows-mastitis-finding-the-risk-factors-that-matter",
+    "href": "research.html#dairy-cows-mastitis-finding-the-risk-factors-that-matter",
+    "title": "Research",
+    "section": "Dairy cows & mastitis — finding the risk factors that matter",
+    "text": "Dairy cows & mastitis — finding the risk factors that matter\nBefore wild bovids, my MSc and early veterinary work focused on a very different interface: small-holder dairy farms in western Thailand. Clinical mastitis is a costly, chronic problem for these farmers, and ordinary regression often hides the relationships between farm practices, pathogens, and treatment outcomes.\n\n\nSampling locations of 43 smallholder dairy farms across three central-western provinces — Kanchanaburi, Ratchaburi, and Nakhon Pathom — with the sampled districts shaded on the inset. From Horpiencharoen et al. (2019), Preventive Veterinary Medicine 164, 49–55 (DOI).\n\nIn Horpiencharoen et al. (Preventive Veterinary Medicine, 2019), my co-authors and I sampled 100 quarters of milk from 100 cows across 43 dairies and built a Bayesian network that connects farm management (floor type, dry-cow therapy, milking-machine hygiene, parity) to the pathogens isolated in mastitis milk (Streptococcus, Staphylococcus, E. coli, S. dysgalactiae) and to antimicrobial susceptibility (penicillin, gentamicin, cloxacillin, AMC).\nThe network made two things visible that ordinary statistics missed:\n\nConcrete or rubber floors, hand stripping after machine milking, dry-cow therapy, and routine milking-machine cleaning were the four strongest levers for reducing Streptococcus spp. — the dominant pathogen.\nMost isolates were resistant to penicillin G (40 %), but susceptible to amoxicillin/clavulanic acid (81 %) and cloxacillin (64 %) — useful, concrete guidance for farmers’ first-line treatment.\n\n\n\nOriginal schematic summarising the Bayesian network in Horpiencharoen et al. (2019): farm-management practices (slate-blue) → milk pathogens (ivory) → clinical signs (sage) and antimicrobial susceptibility (taupe). Redrawn by the author for this site. Source: Preventive Veterinary Medicine 164, 49–55 (DOI 10.1016/j.prevetmed.2019.01.014).\n\nRead the paper → DOI 10.1016/j.prevetmed.2019.01.014"
+  },
+  {
+    "objectID": "research.html#spatial-computational-epidemiology",
+    "href": "research.html#spatial-computational-epidemiology",
+    "title": "Research",
+    "section": "Spatial & computational epidemiology",
+    "text": "Spatial & computational epidemiology\nI use spatial methods and reproducible workflows to bring ecology into epidemiology (and vice-versa):\n\nSpecies distribution and habitat-suitability modelling.\nSpatial and spatiotemporal risk mapping for zoonotic disease.\nStochastic compartmental models for wildlife populations.\nOpen code and version control (R + GitHub) for every analysis.\n\nSee the publications page for the full list."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Pangolins, pathogens, and the price of land-use change",
+    "section": "",
+    "text": "Welcome — thanks for stopping by. I wanted the first post here to be about something I keep thinking about as a vet, a wildlife disease ecologist, and someone who grew up in Southeast Asia: the places where people, wild animals, and pathogens are pushed closer together, and how often that push is something we do to ourselves."
+  },
+  {
+    "objectID": "posts/welcome/index.html#the-pangolin-on-the-cover",
+    "href": "posts/welcome/index.html#the-pangolin-on-the-cover",
+    "title": "Pangolins, pathogens, and the price of land-use change",
+    "section": "The pangolin on the cover",
+    "text": "The pangolin on the cover\nThe most-trafficked wild mammal on Earth is almost certainly a pangolin. All eight species — four in Africa, four in Asia, including the Sunda pangolin (Manis javanica) across the region I come from — are listed on CITES Appendix I, and all eight are in some shade of red on the IUCN list. Their scales, made of the same keratin as my fingernails, are smuggled by the tonne into traditional-medicine markets. Their meat is a luxury dish. Estimates from seizure data suggest more than a million pangolins have been pulled out of the wild over the last two decades, and every estimate people bother to make turns out to be an undercount.\nThat number matters beyond the animals themselves. Pangolins became household names in 2020 when their role in the early SARS-CoV-2 investigation put them briefly on every front page. I don’t think pangolins caused that pandemic. But the episode made something visible that wildlife veterinarians had been quietly writing about for years: illegally traded wildlife is a moving buffet of pathogens, carried through live-animal markets, back-road holding pens, airport baggage, and courier networks that no diagnostic lab has standing access to."
+  },
+  {
+    "objectID": "posts/welcome/index.html#tracking-wildlife-in-southeast-asia",
+    "href": "posts/welcome/index.html#tracking-wildlife-in-southeast-asia",
+    "title": "Pangolins, pathogens, and the price of land-use change",
+    "section": "Tracking wildlife in Southeast Asia",
+    "text": "Tracking wildlife in Southeast Asia\nPart of why this is so hard to manage is that we have a very uneven picture of what’s moving around. My own work has been on the resident side of that picture — GPS collars on gaur and banteng, habitat-suitability models across thirteen Asian countries, stochastic disease models that ask what happens if a cattle-borne pathogen actually meets a wild bovid population.\nA couple of things you learn quickly from that kind of tracking work:\n\nWild bovid habitat in Southeast Asia is fragmented and squeezed up against the working landscape. Over half of the habitat that is still ecologically suitable for gaur, banteng, and wild water buffalo sits outside protected areas. That isn’t a failure of conservation; it’s a description of a continent where national parks are islands in a sea of agriculture, plantation, and human settlement.\nWhere wild bovid habitat and domestic cattle density overlap, you get interface zones — forest edges, cropland borders, shared water points — that are exactly the kinds of places where pathogens like foot-and-mouth disease, haemorrhagic septicaemia, or brucellosis can move in either direction.\nIllegal hunting, snaring, and wildlife trafficking cut right through these same zones. So the same corridors that matter for conservation are also the corridors that matter for pathogen movement and for the wildlife trade.\n\nIt is, in other words, one landscape with several problems stacked on top of each other."
+  },
+  {
+    "objectID": "posts/welcome/index.html#land-use-change-is-a-disease-driver",
+    "href": "posts/welcome/index.html#land-use-change-is-a-disease-driver",
+    "title": "Pangolins, pathogens, and the price of land-use change",
+    "section": "Land-use change is a disease driver",
+    "text": "Land-use change is a disease driver\nMost of the big emerging infectious disease events of the last fifty years — Nipah, SARS, MERS, Ebola, highly pathogenic avian influenza, monkeypox/mpox, SARS-CoV-2 — share a pattern. A pathogen that was quietly circulating in a wild host encountered humans (or human-adjacent animals like pigs, poultry, civets, or camels) because the edge between wild and not-wild shifted. A forest was cleared, a plantation was expanded, a cave was mined, a live-animal market scaled up, a trade route opened.\nThe published evidence on this has become hard to argue with. Ecological studies show that deforestation and landscape fragmentation correlate with increases in zoonotic disease spillover events, because they change which animals live where, which pathogens they carry, and how often any of that touches a human community. The wildlife trade amplifies the effect — it takes that edge and moves it, physically, into airports and cities.\nThe implication for my field is uncomfortable and, I think, freeing: surveillance designed around known pathogens and known hosts will always be chasing the last outbreak. Surveillance designed around the interfaces — forest edges being cleared, markets that handle wild species, transport chains that aggregate animals — has a chance of catching the next one."
+  },
+  {
+    "objectID": "posts/welcome/index.html#one-health-honestly",
+    "href": "posts/welcome/index.html#one-health-honestly",
+    "title": "Pangolins, pathogens, and the price of land-use change",
+    "section": "One Health, honestly",
+    "text": "One Health, honestly\n“One Health” gets used so often in grant applications that it can start to sound like a polite slogan. I want to try to keep it concrete on this blog. For me, One Health means at least three things:\n\nShared data and shared surveillance. Human, animal, and environmental health agencies in most of Southeast Asia (and most of the world) still track their own subsets of the picture in their own systems. The useful work is often the boring work of getting those datasets to speak to each other.\nConservation as disease prevention. Keeping forests standing, keeping wild populations viable, and enforcing wildlife-trade regulations aren’t separate from pandemic preparedness — they are pandemic preparedness, delivered upstream. The pangolin that stays in the forest doesn’t enter a supply chain.\nField-first, lab-second. The most important questions are almost never answered by a sample alone. They’re answered by someone who has actually stood in the farm, the forest edge, or the market, and can tell you what “normal” looks like there."
+  },
+  {
+    "objectID": "posts/welcome/index.html#what-i-want-to-write-about-here",
+    "href": "posts/welcome/index.html#what-i-want-to-write-about-here",
+    "title": "Pangolins, pathogens, and the price of land-use change",
+    "section": "What I want to write about here",
+    "text": "What I want to write about here\nExpect short, unhurried pieces on:\n\nWildlife conservation and illegal wildlife trade in Southeast Asia\nEmerging infectious diseases and what the underlying ecology is actually telling us\nHonest notes on using R and reproducible workflows for movement ecology, spatial epidemiology, and disease modelling\nField stories — the slow, strange, wonderful parts of the work\n\nIf any of this resonates with you — whether you’re a vet, a student, a conservation colleague, or someone who just loves wildlife — I’d love to hear from you.\n— Wantida (Wow)"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "I’d love to hear from you — whether you’re interested in collaborating, have a question about my research, or just want to say hi."
+  },
+  {
+    "objectID": "contact.html#get-in-touch",
+    "href": "contact.html#get-in-touch",
+    "title": "Contact",
+    "section": "Get in touch",
+    "text": "Get in touch\n\nEmail: wantidah@gmail.com\nGitHub: github.com/Wantidah\nGoogle Scholar: profile\nORCID: 0000-0002-3526-9136"
+  },
+  {
+    "objectID": "contact.html#collaborations",
+    "href": "contact.html#collaborations",
+    "title": "Contact",
+    "section": "Collaborations",
+    "text": "Collaborations\nIf you’re working on wildlife disease, One Health surveillance, movement ecology, spatial epidemiology, or conservation medicine, and you think there’s common ground, please reach out. I especially enjoy working with field teams and community-based conservation groups in Southeast Asia."
+  },
+  {
+    "objectID": "contact.html#mentoring",
+    "href": "contact.html#mentoring",
+    "title": "Contact",
+    "section": "Mentoring",
+    "text": "Mentoring\nIf you’re a student or early-career researcher looking for guidance on working at the wildlife–disease interface, I’m happy to chat. I can’t promise to take on every project, but I can usually point you toward good resources or people."
+  },
+  {
+    "objectID": "about.html#hi-im-wantida-wow",
+    "href": "about.html#hi-im-wantida-wow",
+    "title": "About",
+    "section": "Hi, I’m Wantida (Wow)",
+    "text": "Hi, I’m Wantida (Wow)\nI’m a veterinary epidemiologist and disease ecologist working at the overlap of veterinary medicine, wildlife health, and One Health. I try to keep one foot in the field — with animals, landscapes, and communities — and one foot in the data.\nRight now I’m a postdoctoral researcher at Penn State (Department of Ecosystem Science and Management), where I work on targeted surveillance for SARS-CoV-2 in white-tailed deer across Pennsylvania and eight other U.S. states, in collaboration with USDA and USGS. My days involve R, GPS movement data, contact networks, and many, many deer.\nBefore Penn State, my PhD at Massey University (New Zealand) focused on wild bovid habitat and infectious disease risk in Thailand — using habitat suitability models and disease-dynamic simulations to map where threatened wild cattle species (gaur, banteng, wild water buffalo) overlap with domestic livestock and shared pathogens."
+  },
+  {
+    "objectID": "about.html#research-interests",
+    "href": "about.html#research-interests",
+    "title": "About",
+    "section": "Research interests",
+    "text": "Research interests\n\nOne Health thinking — treating human, animal, and environmental health as one connected system.\nWildlife conservation — especially threatened species and the landscapes they depend on.\nDisease ecology — understanding where and why pathogens emerge, not just what they are.\nOpen, reproducible science — sharing code and data so other researchers (and future me) can build on the work."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "Background",
+    "text": "Background\n\nPostdoctoral Researcher — Penn State University, USA (April 2024 – present). Targeted Surveillance for SARS-CoV-2 in White-tailed Deer.\nPhD, Veterinary Epidemiology — Massey University, New Zealand (2020 – 2024). Dissertation: Wild bovid habitat and infectious disease risk in Thailand. Supervised by David T. S. Hayman, with co-supervisors Jonathan Marshall, Renata Muylaert, and Reju Sam John.\nField Researcher — Golden Triangle Asian Elephant Foundation & Hunter College CUNY (2019 – 2020). Studying elephant behaviour and human–elephant conflict in Kanchanaburi, Thailand.\nResearch Assistant — Kasetsart University (2018 – 2019). Dog-population surveillance and rabies control (CNVR).\nVeterinary Clinician — Livestock and Wildlife Hospital, Mahidol University (2012 – 2015). Clinical practice with livestock and wildlife, including rehabilitation of trafficked species.\nMS, Veterinary Epidemiology — Kasetsart University (2016 – 2018).\nDVM (Doctor of Veterinary Medicine) — Kasetsart University (2006 – 2012)."
+  },
+  {
+    "objectID": "about.html#tools-i-use",
+    "href": "about.html#tools-i-use",
+    "title": "About",
+    "section": "Tools I use",
+    "text": "Tools I use\nR · QGIS · stochastic compartmental models (SI/SEI/SIRS/SEIRS) · species distribution / habitat suitability modelling · GitHub for reproducible workflows."
+  },
+  {
+    "objectID": "about.html#cv",
+    "href": "about.html#cv",
+    "title": "About",
+    "section": "CV",
+    "text": "CV\nDownload CV (PDF)"
+  },
+  {
+    "objectID": "about.html#languages",
+    "href": "about.html#languages",
+    "title": "About",
+    "section": "Languages",
+    "text": "Languages\nThai (native) · English (fluent)."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\nThe best way to reach me is by email — wantidah@gmail.com. I’m also on GitHub."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Short, plain-language posts about my research, things I read, and thoughts from the field. Mostly wildlife conservation and disease ecology — occasionally other things that catch my attention.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPangolins, pathogens, and the price of land-use change\n\n\n\none-health\n\nwildlife-trade\n\nemerging-diseases\n\n\n\nWhy Southeast Asia’s wildlife trade and shifting landscapes keep putting people, livestock, and wild animals on the same map — and what One Health thinking might do about it.\n\n\n\n\n\nApr 19, 2026\n\n5 min\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Wantida Horpiencharoen",
+    "section": "",
+    "text": "Wantida Horpiencharoen\n  Veterinary epidemiologist · Wildlife disease ecologist · One Health researcher\n\nHi — I’m Wow, a postdoctoral researcher at Penn State working on SARS-CoV-2 surveillance in white-tailed deer. I’m a veterinarian (DVM, Kasetsart) and disease ecologist (PhD, Massey University) whose work sits at the wildlife–livestock–human interface.\nMy research combines GPS movement analysis, contact networks, species distribution modelling, and stochastic compartmental models to understand how pathogens circulate in wildlife — and what that means for conservation and public health.\nI care about One Health thinking, open reproducible science in R, and fieldwork that stays close to the animals and communities it’s meant to serve.\n\n\n\n\n\n\nTipWhat you’ll find here\n\n\n\n\nMy research on wildlife disease, spillover, and spatial epidemiology\nA list of my publications\nA blog with short pieces on wildlife conservation and One Health\nA bit more about me and how to get in touch"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "A full list of my peer-reviewed papers, conference presentations, and preprints. You can also find me on Google Scholar and ORCID — my CV (PDF) has the definitive list.\nMy name is in bold; clickable DOIs link each paper."
+  },
+  {
+    "objectID": "publications.html#peer-reviewed-publications",
+    "href": "publications.html#peer-reviewed-publications",
+    "title": "Publications",
+    "section": "Peer-reviewed publications",
+    "text": "Peer-reviewed publications\n\n2025\n\nGiglio, R. M., Westmoreland, A., Wilber, M., Wilson-Henjum, G., Chan, A. N., Gardner, B., Horpiencharoen, W., Gagne, R. B., Corondi, A., Baker, A., Combs, M., Chandler, J., Manlove, K., Pepin, K. M. & Walter, W. D. (2025). Viral outbreak dynamics and evolution in wildlife at the interface with humans. Biology Letters. [DOI]\nHorpiencharoen, W., Marshall, J. C., Muylaert, R. L., John, R. S., & Hayman, D. T. S. (2025). Spatial risk of pathogen transmission from cattle to vulnerable and endangered wild bovids in Thailand. Conservation Science and Practice. [DOI]\n\n\n\n2024\n\nHorpiencharoen, W., Muylaert, R. L., Marshall, J. C., John, R. S., Lynam, A. J., Riggio, A., Godfrey, A., Ngoprasert, D., Gale, G. A., Ash, E., Bisi, F., Cremonesi, G., Clements, G. R., Yindee, M., Shwe, N. M., Pin, C., Gray, T. N. E., Aung, S. S., Nakbun, S., Manka, S. G., Steinmetz, R., Phoonjampa, R., Seuaturien, N., Phumanee, W. & Hayman, D. T. S. (2024). Mapping threatened Thai bovids provides opportunities for improved conservation outcomes in Asia. Royal Society Open Science. [DOI]\nHorpiencharoen, W., Marshall, J. C., Muylaert, R. L., John, R. S., & Hayman, D. T. S. (2024). Impact of infectious diseases on wild Bovidae populations in Thailand: insights from population modelling and disease dynamics. Journal of the Royal Society Interface. [DOI]\n\n\n\n2023\n\nJacobson, S. L., Dechanupong, J., Horpiencharoen, W., Yindee, M., & Plotnik, J. M. (2023). Innovating to solve a novel puzzle: wild Asian elephants vary in their ability to problem solve. Animal Behaviour. [DOI]\nYindee, M., Thomas, W., Wajjawalku, W., Wongsawang, W., Income, N., Horpiencharoen, W., … & Ketpun, D. (2023). Clinical haematology, biochemistry profiles and erythrocytic morphometry of confiscated Sunda pangolins (Manis javanica) in the Centre for Rehabilitation and Quarantine of Confiscated Animals, Wildlife and Alien Species, Thailand. Veterinary Integrative Sciences, 21(2), 607–622. [DOI]\n\n\n\n2020\n\nHorpiencharoen, W., Thongratsakul, S., & Poolkhet, C. (2020). Risk factors associated with environmental mastitis in clinical cases at small dairies in western Thailand. Agriculture and Natural Resources, 54(2), 190–196. [Link]\n\n\n\n2019\n\nHorpiencharoen, W., Thongratsakul, S., & Poolkhet, C. (2019). Risk factors of clinical mastitis and antimicrobial susceptibility test results of mastitis milk from dairy cattle in western Thailand: Bayesian network analysis. Preventive Veterinary Medicine, 164, 49–55. [DOI]\nLeelahapongsathon, K., Horpiencharoen, W., Thongyuan, S., Kasemsuwan, S., & Pinyopummintr, T. (2019). Rapid community dog assessment in rabies endemic area. Proceedings of the International Journal of Infectious Diseases, 79, 35. [DOI]"
+  },
+  {
+    "objectID": "publications.html#conference-presentations",
+    "href": "publications.html#conference-presentations",
+    "title": "Publications",
+    "section": "Conference presentations",
+    "text": "Conference presentations\n\nOral\n\nHorpiencharoen, W. et al. (April 2025). Contact network of white-tailed deer exposed to SARS-CoV-2 in a residential community in central Pennsylvania. 80th Annual Northeast Fish & Wildlife Conference, NH, USA. [Program]\nHorpiencharoen, W. et al. (October 2024). Assessing wild bovid population dynamics and impact from infectious diseases in Thailand. Wildlife Society’s 31st Annual Conference, Baltimore, MD, USA.\nHorpiencharoen, W. et al. (July 2023). Mapping the risk of disease transmission between wild bovids and domestic livestock in Thailand. 25th International Congress on Modelling and Simulation, Darwin, Australia. [DOI]\nHorpiencharoen, W. et al. (September 2022). Identifying remaining habitats suitable for wild bovids in Thailand. 23rd Khon Kaen Veterinary Annual International Conference (KVAC), Thailand. — Best Oral Presentation Award.\n\n\n\nPoster\n\nHorpiencharoen, W. et al. (December 2021). Habitat suitability and protected areas for endangered bovids in Asia. 7th One Health Aotearoa Symposium, New Zealand.\nHorpiencharoen, W. et al. (June 2019). Methods for collecting ethnological data on Asian elephants with applications for conservation. 2nd Young Conservation Scientists Conference, Nakhon Ratchasima, Thailand."
+  },
+  {
+    "objectID": "publications.html#awards",
+    "href": "publications.html#awards",
+    "title": "Publications",
+    "section": "Awards",
+    "text": "Awards\n\nBest Oral Presentation, 23rd KVAC (2022)\nBest Oral Presentation, 20th case-study presentation, Kasetsart University (2011)"
+  }
+]

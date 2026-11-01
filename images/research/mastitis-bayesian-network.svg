@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780"
+     role="img" aria-label="Schematic Bayesian network linking dairy farm management, mastitis pathogens, clinical signs, and antibiotic susceptibility">
+  <style><![CDATA[
+    /* Patrick Hand (Google Fonts) — a legible, tidy hand-written style.
+       Falls back to platform handwriting fonts and finally generic cursive. */
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+    .hwf     { font-family: 'Patrick Hand', 'Segoe Print', 'Bradley Hand', 'Comic Sans MS', cursive; }
+    .title   { font-family: 'Patrick Hand', 'Segoe Print', 'Bradley Hand', 'Comic Sans MS', cursive; font-weight: 400; font-size: 40px; fill: #475864; }
+    .sub     { font-family: 'Patrick Hand', 'Segoe Print', 'Bradley Hand', 'Comic Sans MS', cursive; font-weight: 400; font-size: 24px; fill: #6e7680; }
+    .lbl     { font-family: 'Patrick Hand', 'Segoe Print', 'Bradley Hand', 'Comic Sans MS', cursive; font-weight: 400; font-size: 22px; fill: #434a52; }
+    .lblb    { font-family: 'Patrick Hand', 'Segoe Print', 'Bradley Hand', 'Comic Sans MS', cursive; font-weight: 700; font-size: 24px; fill: #434a52; }
+    .pct     { font-family: 'Patrick Hand', 'Segoe Print', 'Bradley Hand', 'Comic Sans MS', cursive; font-weight: 700; font-size: 22px; fill: #8a7566; }
+    .hdr     { font-family: 'Patrick Hand', 'Segoe Print', 'Bradley Hand', 'Comic Sans MS', cursive; font-weight: 700; font-size: 28px; }
+    .pen     { fill: none; stroke: #434a52; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .pen-thin{ fill: none; stroke: #434a52; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+  ]]></style>
+
+  <!-- Paper-like cream background -->
+  <rect width="1200" height="780" fill="#f3f4ef"/>
+
+  <!-- Title -->
+  <text x="600" y="54" class="title" text-anchor="middle">Mastitis in small-holder dairy cows — a schematic network</text>
+  <text x="600" y="86" class="sub"   text-anchor="middle">farm practices &#8594; pathogens &#8594; clinical signs &amp; antibiotic susceptibility</text>
+
+  <!-- Column headers -->
+  <text x="170"  y="140" class="hdr" fill="#5b7489" text-anchor="middle">Farm management</text>
+  <text x="600"  y="140" class="hdr" fill="#7d7860" text-anchor="middle">Pathogens in milk</text>
+  <text x="1010" y="140" class="hdr" fill="#6a8268" text-anchor="middle">Clinical signs</text>
+  <text x="1010" y="470" class="hdr" fill="#957766" text-anchor="middle">Antibiotic susceptibility</text>
+
+  <!-- =================== FARM MANAGEMENT (blue) =================== -->
+  <!-- Floor type -->
+  <rect x="45"  y="160" width="250" height="60" rx="14" ry="14" fill="#c9d4dc" stroke="#434a52" stroke-width="1.8"/>
+  <text x="170" y="187" class="lblb" text-anchor="middle">Floor type</text>
+  <text x="170" y="210" class="lbl"  text-anchor="middle">concrete / rubber &#8728; mixed</text>
+
+  <!-- Dry-cow therapy -->
+  <rect x="45"  y="235" width="250" height="60" rx="14" ry="14" fill="#c9d4dc" stroke="#434a52" stroke-width="1.8"/>
+  <text x="170" y="262" class="lblb" text-anchor="middle">Dry-cow therapy</text>
+  <text x="170" y="285" class="lbl"  text-anchor="middle">yes &#8728; no</text>
+
+  <!-- Hand stripping -->
+  <rect x="45"  y="310" width="250" height="60" rx="14" ry="14" fill="#c9d4dc" stroke="#434a52" stroke-width="1.8"/>
+  <text x="170" y="337" class="lblb" text-anchor="middle">Hand stripping</text>
+  <text x="170" y="360" class="lbl"  text-anchor="middle">after machine milking</text>
+
+  <!-- Milking-machine cleaning -->
+  <rect x="45"  y="385" width="250" height="60" rx="14" ry="14" fill="#c9d4dc" stroke="#434a52" stroke-width="1.8"/>
+  <text x="170" y="412" class="lblb" text-anchor="middle">Milking-machine</text>
+  <text x="170" y="435" class="lbl"  text-anchor="middle">routine cleaning</text>
+
+  <!-- Parity -->
+  <rect x="45"  y="460" width="250" height="60" rx="14" ry="14" fill="#c9d4dc" stroke="#434a52" stroke-width="1.8"/>
+  <text x="170" y="487" class="lblb" text-anchor="middle">Parity</text>
+  <text x="170" y="510" class="lbl"  text-anchor="middle">&#8804; 3 &#8728; &gt; 3</text>
+
+  <!-- =================== CENTRAL: PATHOGENS (warm yellow) =================== -->
+  <rect x="370" y="200" width="460" height="370" rx="18" ry="18" fill="#e6dfcc" stroke="#434a52" stroke-width="2.2"/>
+  <text x="600" y="240" class="lblb" text-anchor="middle" style="font-size:24px;">Microbiological culture</text>
+  <text x="600" y="268" class="lbl"  text-anchor="middle">100 milk quarters &#8728; 43 farms &#8728; W. Thailand</text>
+
+  <!-- Pathogen rows with posterior probabilities -->
+  <g>
+    <text x="410" y="312" class="lblb">Streptococcus spp.</text>
+    <text x="790" y="312" class="pct" text-anchor="end">16.7%</text>
+    <line x1="410" y1="320" x2="790" y2="320" class="pen-thin" stroke-dasharray="2 4"/>
+
+    <text x="410" y="352" class="lblb">Staphylococcus spp.</text>
+    <text x="790" y="352" class="pct" text-anchor="end">11.9%</text>
+    <line x1="410" y1="360" x2="790" y2="360" class="pen-thin" stroke-dasharray="2 4"/>
+
+    <text x="410" y="392" class="lblb">Escherichia coli</text>
+    <text x="790" y="392" class="pct" text-anchor="end">7.5%</text>
+    <line x1="410" y1="400" x2="790" y2="400" class="pen-thin" stroke-dasharray="2 4"/>
+
+    <text x="410" y="432" class="lblb">Strep. dysgalactiae</text>
+    <text x="790" y="432" class="pct" text-anchor="end">7.3%</text>
+    <line x1="410" y1="440" x2="790" y2="440" class="pen-thin" stroke-dasharray="2 4"/>
+
+    <text x="410" y="472" class="lbl">Strep. uberis</text>
+    <text x="790" y="472" class="pct" text-anchor="end">4.1%</text>
+
+    <text x="410" y="502" class="lbl">Enterococcus faecalis</text>
+    <text x="790" y="502" class="pct" text-anchor="end">6.3%</text>
+
+    <text x="410" y="532" class="lbl">Klebsiella spp.</text>
+    <text x="790" y="532" class="pct" text-anchor="end">4.9%</text>
+  </g>
+  <text x="600" y="562" class="sub" text-anchor="middle" fill="#8a7566" style="font-weight:700;">top 4 pathogens carry ~43% of isolates</text>
+
+  <!-- =================== CLINICAL SIGNS (soft green) =================== -->
+  <rect x="870" y="160" width="280" height="265" rx="14" ry="14" fill="#d3ddd2" stroke="#434a52" stroke-width="1.8"/>
+  <g>
+    <text x="890"  y="195" class="lblb">Udder redness</text>
+    <text x="1130" y="195" class="pct" text-anchor="end">21%</text>
+    <line x1="890" y1="204" x2="1130" y2="204" class="pen-thin" stroke-dasharray="2 4"/>
+
+    <text x="890"  y="236" class="lblb">Cow's appetite</text>
+    <text x="1130" y="236" class="pct" text-anchor="end">25% abnormal</text>
+    <line x1="890" y1="244" x2="1130" y2="244" class="pen-thin" stroke-dasharray="2 4"/>
+
+    <text x="890"  y="277" class="lblb">Depression</text>
+    <text x="1130" y="277" class="pct" text-anchor="end">21%</text>
+    <line x1="890" y1="286" x2="1130" y2="286" class="pen-thin" stroke-dasharray="2 4"/>
+
+    <text x="890"  y="318" class="lblb">&#8595; Milk production</text>
+    <text x="1130" y="318" class="pct" text-anchor="end">54%</text>
+    <line x1="890" y1="327" x2="1130" y2="327" class="pen-thin" stroke-dasharray="2 4"/>
+
+    <text x="890"  y="370" class="lbl">Clinical mastitis was</text>
+    <text x="890"  y="395" class="lbl">the entry criterion.</text>
+  </g>
+
+  <!-- =================== ANTIBIOTIC SUSCEPTIBILITY (warm orange) =================== -->
+  <rect x="870" y="495" width="280" height="240" rx="14" ry="14" fill="#d9cdc0" stroke="#434a52" stroke-width="1.8"/>
+  <g>
+    <text x="890"  y="530" class="lblb">Amox.-clav. (AMC)</text>
+    <text x="1130" y="530" class="pct" text-anchor="end" style="fill:#6a8268; font-weight:700;">81% S</text>
+    <line x1="890" y1="539" x2="1130" y2="539" class="pen-thin" stroke-dasharray="2 4"/>
+
+    <text x="890"  y="572" class="lblb">Cloxacillin</text>
+    <text x="1130" y="572" class="pct" text-anchor="end" style="fill:#6a8268; font-weight:700;">64% S</text>
+    <line x1="890" y1="581" x2="1130" y2="581" class="pen-thin" stroke-dasharray="2 4"/>
+
+    <text x="890"  y="614" class="lblb">Gentamicin</text>
+    <text x="1130" y="614" class="pct" text-anchor="end" style="fill:#6a8268; font-weight:700;">54% S</text>
+    <line x1="890" y1="623" x2="1130" y2="623" class="pen-thin" stroke-dasharray="2 4"/>
+
+    <text x="890"  y="656" class="lblb">Penicillin G</text>
+    <text x="1130" y="656" class="pct" text-anchor="end" style="fill:#9c6a5d; font-weight:700;">40% R</text>
+    <line x1="890" y1="665" x2="1130" y2="665" class="pen-thin" stroke-dasharray="2 4"/>
+
+    <text x="890"  y="700" class="lbl">S = susceptible &#8728; R = resistant</text>
+    <text x="890"  y="724" class="lbl">across all isolates</text>
+  </g>
+
+  <!-- =================== ARROWS =================== -->
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#434a52"/>
+    </marker>
+  </defs>
+
+  <!-- Mgmt → Pathogens (Bezier curves) -->
+  <path d="M 295,190 C 330,215 340,260 370,270" class="pen" marker-end="url(#arrow)"/>
+  <path d="M 295,265 C 330,280 340,310 370,325" class="pen" marker-end="url(#arrow)"/>
+  <path d="M 295,340 C 330,370 340,380 370,390" class="pen" marker-end="url(#arrow)"/>
+  <path d="M 295,415 C 330,425 340,440 370,440" class="pen" marker-end="url(#arrow)"/>
+  <path d="M 295,490 C 330,490 340,490 370,490" class="pen" marker-end="url(#arrow)"/>
+
+  <!-- Pathogens → Clinical signs (upper) -->
+  <path d="M 830,290 C 855,265 860,250 870,245" class="pen" marker-end="url(#arrow)"/>
+  <path d="M 830,340 C 855,315 860,295 870,290" class="pen" marker-end="url(#arrow)"/>
+
+  <!-- Pathogens → Antibiotic susceptibility (lower) -->
+  <path d="M 830,440 C 855,485 860,525 870,545" class="pen" marker-end="url(#arrow)"/>
+  <path d="M 830,500 C 855,545 860,575 870,585" class="pen" marker-end="url(#arrow)"/>
+
+  <!-- =================== KEY FINDINGS =================== -->
+  <g transform="translate(45,600)">
+    <text x="0" y="0"   class="hdr" fill="#475864">Key findings</text>
+    <text x="0" y="32"  class="lbl">&#10148; Floor type, dry-cow therapy, hand stripping</text>
+    <text x="0" y="56"  class="lbl">&#160;&#160;&#160;and machine cleaning are the four biggest</text>
+    <text x="0" y="80"  class="lbl">&#160;&#160;&#160;levers for reducing <tspan font-weight="700">Streptococcus</tspan> spp.</text>
+    <text x="0" y="114" class="lbl">&#10148; 40% of isolates are resistant to penicillin G</text>
+    <text x="0" y="138" class="lbl">&#160;&#160;&#160;&#8594; first-line treatment should favour AMC</text>
+    <text x="0" y="162" class="lbl">&#160;&#160;&#160;&#160;&#160;or cloxacillin.</text>
+  </g>
+
+  <!-- Credit line inside the figure -->
+  <text x="1150" y="765" class="sub" text-anchor="end" style="font-size:15px; fill:#6e7680;">original schematic &#183; W. Horpiencharoen, 2026</text>
+</svg>
