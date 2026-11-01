@@ -1,18 +1,24 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"               # .md guides (TUTORIAL.md) stay out of the public site
   resources:
     - "files/**"
     - "images/**"
 
 website:
-  title: ""                 # no brand text in the top-left navbar
+  title: "Wantida Horpiencharoen"  # used for browser tabs, search results and the RSS feed
   description: "Wantida Horpiencharoen — veterinary epidemiologist, wildlife disease ecologist, One Health researcher"
   site-url: "https://wantidah.github.io"
   repo-url: "https://github.com/Wantidah/wantidah.github.io"
   favicon: images/favicon.png
+  image: images/home-forest-marine.jpg  # default preview image when a page is shared
+  open-graph: true
+  twitter-card: true
 
   navbar:
+    title: false               # no brand text in the top-left navbar
     background: light
     collapse-below: xxl        # always show the hamburger (three-line) menu top-left
     logo: ""

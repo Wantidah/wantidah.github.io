@@ -18,7 +18,8 @@ and [ORCID](https://orcid.org/0000-0002-3526-9136) — my
 
 - Giglio, R. M., Westmoreland, A., Wilber, M., Wilson-Henjum, G.,
   Chan, A. N., Gardner, B., **Horpiencharoen, W.**, Gagne, R. B.,
-  Corondi, A., Baker, A. & Combs, M. (2025). *Viral outbreak dynamics
+  Corondi, A., Baker, A., Combs, M., Chandler, J., Manlove, K.,
+  Pepin, K. M. & Walter, W. D. (2025). *Viral outbreak dynamics
   and evolution in wildlife at the interface with humans.* **Biology
   Letters.** [[DOI]](https://doi.org/10.1098/rsbl.2025.0540)
 
@@ -30,10 +31,12 @@ and [ORCID](https://orcid.org/0000-0002-3526-9136) — my
 
 ### 2024
 
-- **Horpiencharoen, W.**, Muylaert, R. L., John, R. S., Marshall, J. C.,
-  Lynam, A., Ngoprasert, D., Godfrey, A., Riggio, A., Gale, G., Ash, E.,
-  Bisi, F., Cremonesi, G., Clements, G. R., Lynam, A., Shwe, N. M.,
-  Pin, C., Gray, T. N. E., Aung, S. S., Nakbun, S., … & Hayman, D. T. S.
+- **Horpiencharoen, W.**, Muylaert, R. L., Marshall, J. C., John, R. S.,
+  Lynam, A. J., Riggio, A., Godfrey, A., Ngoprasert, D., Gale, G. A.,
+  Ash, E., Bisi, F., Cremonesi, G., Clements, G. R., Yindee, M.,
+  Shwe, N. M., Pin, C., Gray, T. N. E., Aung, S. S., Nakbun, S.,
+  Manka, S. G., Steinmetz, R., Phoonjampa, R., Seuaturien, N.,
+  Phumanee, W. & Hayman, D. T. S.
   (2024). *Mapping threatened Thai bovids provides opportunities for
   improved conservation outcomes in Asia.* **Royal Society Open
   Science.** [[DOI]](https://doi.org/10.1098/rsos.240574)
@@ -54,7 +57,7 @@ and [ORCID](https://orcid.org/0000-0002-3526-9136) — my
 
 - Yindee, M., Thomas, W., Wajjawalku, W., Wongsawang, W., Income, N.,
   **Horpiencharoen, W.**, … & Ketpun, D. (2023). *Clinical haematology,
-  biochemistry profiles and erythrocytic morphology of confiscated
+  biochemistry profiles and erythrocytic morphometry of confiscated
   Sunda pangolins (Manis javanica) in the Centre for Rehabilitation and
   Quarantine of Confiscated Animals, Wildlife and Alien Species,
   Thailand.* **Veterinary Integrative Sciences, 21(2),** 607–622.

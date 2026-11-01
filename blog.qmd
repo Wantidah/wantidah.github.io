@@ -10,7 +10,7 @@ listing:
   sort-ui: false
   filter-ui: false
   feed: true
-  fields: [date, title, description, categories, reading-time]
+  fields: [image, date, title, description, categories, reading-time]
 page-layout: full
 title-block-banner: images/mountain.jpeg
 title-block-banner-color: "#faf7f1"

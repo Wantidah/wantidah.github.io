@@ -6,7 +6,7 @@ page-layout: article
 
 ```{=html}
 <div class="home-hero">
-  <img src="images/profile.jpeg" alt="Wantida Horpiencharoen" class="home-photo">
+  <img src="images/home-forest-marine.jpg" alt="Wantida hiking a forest trail, blending into Wantida scuba diving underwater" class="home-banner">
   <h1 class="home-name">Wantida Horpiencharoen</h1>
   <p class="home-subtitle">Veterinary epidemiologist · Wildlife disease ecologist · One Health researcher</p>
 </div>

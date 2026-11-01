@@ -2,10 +2,8 @@
 /.quarto/
 **/*.quarto_ipynb
 
-# Don't commit the rendered site if you use a GitHub Action to build.
-# Keep it committed if you publish via `quarto publish gh-pages`.
-# (See SETUP_GUIDE.md — we use the `quarto publish gh-pages` route.)
-# /_site/
+# Rendered site — the GitHub Action builds it and pushes it to gh-pages.
+/_site/
 /_freeze/
 
 # RStudio

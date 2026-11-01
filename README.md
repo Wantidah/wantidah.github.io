@@ -36,11 +36,11 @@ refreshes.
 
 ## Publish to GitHub Pages
 
-```bash
-quarto publish gh-pages
-```
+Push to `main`. The GitHub Action in `.github/workflows/publish.yml`
+renders the site and updates the `gh-pages` branch, which GitHub Pages
+serves.
 
-(See `SETUP_GUIDE.md` for the full first-time setup, including how to
+(See `SETUP_GUIDE.html` for the full first-time setup, including how to
 install Quarto, make the repo public, and wire up GitHub Pages.)
 
 ## Add a new blog post
